@@ -86,6 +86,25 @@ git push --set-upstream origin main
 git remote -v
 ```
 
+## Cloning repository (using HTTPS)
+
+1. Copy your HTTPS clone URL by going to the "code" section of your main repository page
+2. Use the git clone command in the location you want to clone into
+
+```
+git clone "pasteYourLinkHere"
+```
+
+## HEAD, working tree and the index
+
+HEAD - pointer that points to a branch or commit that is the the last checked out. When a make a new commit, the HEAD will be updated to point at the new commit
+
+Working tree - Files that you are currently working on
+
+Index - staging area
+
+Visit [this stackoverflow answer](https://stackoverflow.com/questions/3689838/whats-the-difference-between-head-working-tree-and-index-in-git) for more information.
+
 ## Status
 
 To check status of your git repository, use `git status`
@@ -104,6 +123,24 @@ To stage all files that have been modified
 git add .
 ```
 
+### Unstage
+
+```
+git restore --staged filename.fileExtension
+```
+
+Or to unstaged changes the uncommited and preserve them from all files
+
+```
+git restore --staged .
+```
+
+Unstage changes from file and **delete** the uncommited changes or discard the unstaged changes in the working directory
+
+```
+git restore filename.fileExtension
+```
+
 ## Commits
 
 To commit files already staged
@@ -116,4 +153,50 @@ To automatically stage files that have been modified and then commit, use the `-
 
 ```
 git commit -a -m "your commit message here"
+```
+
+To see all commits, use `git log`
+
+### Removing commits
+
+To remove commits without losing changes made in them, use the commitID for the commit you want to reset to, and the reset command. Changes from the removed commits will move to the unstaged area
+
+```
+git reset commitID
+```
+
+To remove commits and delete changes in them, use the commitID for the commit you want to reset to, and the reset command with the `--hard` tag. Changes from the removed commits will be **deleted and will not be unstaged**
+
+```
+git reset --hard commitID
+```
+
+## Reset, restore and revert
+
+`revert` - is about making a new commit that reverts the changes made by other commits.
+
+`restore` - is about restoring files in the working tree from either the index or another commit. This command does not update your branch. The command can also be used to restore files in the index from another commit.
+
+`reset` - is about updating your branch, moving the tip in order to add or remove commits from the branch. This operation changes the commit history.
+
+For more information, visit [official docs](https://git-scm.com/docs/git#_reset_restore_and_revert)
+
+## Stash
+
+To stash changes that are staged
+
+```
+git stash
+```
+
+To pull changes back to working directory from the stash. Popped changes will be unstaged
+
+```
+git stash pop
+```
+
+To **delete** stashed changes
+
+```
+git stash clear
 ```

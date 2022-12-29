@@ -1,10 +1,10 @@
 # Git Guide
 
-contribution text should come here
+_If you find any errors or if you would like to make improvements or add to this, **please consider contributing** by opening pull requests_
 
-disclaimer should come here
+_This is **not** meant for complete beginners to git and is not a substitute for a proper tutorial. This is meant to be used as a quick reference and contains a list of basic commands (that i think are commonly used) with brief discriptions on how to use them._
 
-mention about learn git branching website
+_An amazing site to learn git in an interactive way is [learnGitBranching](https://learngitbranching.js.org/). You can also try the sandbox version of the same [here](https://learngitbranching.js.org/?NODEMO)_
 
 ## First time setup
 

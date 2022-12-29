@@ -2,6 +2,8 @@
 
 contribution text should come here
 
+disclaimer should come here
+
 ## First time setup
 
 If you haven't already, [click here to install git for windows](https://git-scm.com/download/win) from the official git website. Select git bash
@@ -19,3 +21,31 @@ This sets your username globally for all repositories. To set your username for 
 ### Sign in to your remote git service provider
 
 When you use git to perform a task that requires signing in (such as cloning using HTTPS), you will be prompted to sign in. Git will locally save your login info for your convenience. This will **NOT** happen if you use SSH to connect to your provider. [Click here for more information](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git).
+
+## Basic terminal commands
+
+_These commands use for git bash and other UNIX based shells_
+
+`ls` list all files in the directory
+
+`ls -all` list all files in the directory including hidden files (like git files)
+
+`mkdir` to create a folder
+
+`cd` to change directory (change the folder you're currently viewing in terminal)
+
+`touch filename.fileExtension` to create a new file of the given name and the extension (.md, .txt, etc)
+
+## Creating a git repository and connecting to remote
+
+1. Initialize an empty git repository
+
+```
+git init
+```
+
+2. It is recommended to add at least one file to your repository before connecting it to remote. If your repository is empty, add a readme file
+
+```
+touch README.md
+```

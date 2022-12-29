@@ -68,14 +68,20 @@ git commit -m "first commit"
 git branch -M main
 ```
 
-6. Add your remote origin URL
+6. Add your remote origin URL. You can find your remote URL from the "quick setup" screen right after you create an empty repository from Github
 
 ```
-git remote add origin "your link here"
+git remote add origin yourLinkHere
 ```
 
 7. Push changes to remote
 
 ```
 git push --set-upstream origin main
+```
+
+### Check remote URL attached to a local repository
+
+```
+git remote -v
 ```

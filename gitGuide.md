@@ -86,6 +86,10 @@ git push --set-upstream origin main
 git remote -v
 ```
 
+## Status
+
+To check status of your git repository, use `git status`
+
 ## Staging changes
 
 To stage only a single file

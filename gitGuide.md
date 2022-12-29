@@ -85,3 +85,31 @@ git push --set-upstream origin main
 ```
 git remote -v
 ```
+
+## Staging changes
+
+To stage only a single file
+
+```
+git add filename.fileExtension
+```
+
+To stage all files that have been modified
+
+```
+git add .
+```
+
+## Commits
+
+To commit files already staged
+
+```
+git commit -m "your commit message here"
+```
+
+To automatically stage files that have been modified and then commit, use the `-a` or `-all` tag
+
+```
+git commit -a -m "your commit message here"
+```

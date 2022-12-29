@@ -49,3 +49,33 @@ git init
 ```
 touch README.md
 ```
+
+3. Stage all of your files
+
+```
+git add .
+```
+
+4. Commit all files
+
+```
+git commit -m "first commit"
+```
+
+5. Rename your [master branch to main](https://git-scm.com/docs/git-branch)
+
+```
+git branch -M main
+```
+
+6. Add your remote origin URL
+
+```
+git remote add origin "your link here"
+```
+
+7. Push changes to remote
+
+```
+git push --set-upstream origin main
+```

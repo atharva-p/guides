@@ -4,6 +4,8 @@ contribution text should come here
 
 disclaimer should come here
 
+mention about learn git branching website
+
 ## First time setup
 
 If you haven't already, [click here to install git for windows](https://git-scm.com/download/win) from the official git website. Select git bash
@@ -68,7 +70,7 @@ git commit -m "first commit"
 git branch -M main
 ```
 
-6. Add your remote origin URL. You can find your remote URL from the "quick setup" screen right after you create an empty repository from Github
+6. Add your remote URL (origin). You can find your remote URL from the "quick setup" screen right after you create an empty repository from Github
 
 ```
 git remote add origin yourLinkHere
@@ -92,18 +94,24 @@ git remote -v
 2. Use the git clone command in the location you want to clone into
 
 ```
-git clone "pasteYourLinkHere"
+git clone pasteYourLinkHere
 ```
 
 ## HEAD, working tree and the index
 
-HEAD - pointer that points to a branch or commit that is the the last checked out. When a make a new commit, the HEAD will be updated to point at the new commit
+HEAD - pointer that points to a branch or commit that is the the last checked out. When a make a new commit, the HEAD will be updated to point at the new commit. (\*) symbol denotes the HEAD
 
 Working tree - Files that you are currently working on
 
 Index - staging area
 
 Visit [this stackoverflow answer](https://stackoverflow.com/questions/3689838/whats-the-difference-between-head-working-tree-and-index-in-git) for more information.
+
+## Origin and upstream URLs conventions
+
+`origin` - URL of any repository (whether folked or not) that you own or can directly make changes to is called as origin URL
+
+`upstream` - URL from where a project has been forked is known as upstream URL
 
 ## Status
 
@@ -123,7 +131,7 @@ To stage all files that have been modified
 git add .
 ```
 
-### Unstage
+### Unstage (restore)
 
 ```
 git restore --staged filename.fileExtension
@@ -157,7 +165,7 @@ git commit -a -m "your commit message here"
 
 To see all commits, use `git log`
 
-### Removing commits
+### Removing commits (reset)
 
 To remove commits without losing changes made in them, use the commitID for the commit you want to reset to, and the reset command. Changes from the removed commits will move to the unstaged area
 
@@ -170,6 +178,10 @@ To remove commits and delete changes in them, use the commitID for the commit yo
 ```
 git reset --hard commitID
 ```
+
+### Removing changes of commits while preserving the history (revert)
+
+_yet to be added_
 
 ## Reset, restore and revert
 
@@ -200,3 +212,43 @@ To **delete** stashed changes
 ```
 git stash clear
 ```
+
+## Branches
+
+For listing all branches, use `git branch`
+
+For creating a new branch
+
+```
+git branch branchName
+```
+
+For deleting an existing branch, use `--delete` tag or the `-d` shorhand
+
+```
+git branch -d branchName
+```
+
+For switching (or "checking out") branches
+
+```
+git checkout branchName
+```
+
+## Pushing changes
+
+To push changes, specify your URL (origin) and the branch you want to push changes to
+
+```
+git push origin branchName
+```
+
+To push changes and specify an upstream for further argument less push / pull commands, use the `--set-upstream` or the shorthand `-u` tag. This sets the upstream association for any future push/pull attempts automatically.
+
+```
+git push -u origin branchName
+```
+
+## Contributing to Open Source
+
+_yet to be added_

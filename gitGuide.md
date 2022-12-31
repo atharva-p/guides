@@ -111,7 +111,7 @@ Visit [this stackoverflow answer](https://stackoverflow.com/questions/3689838/wh
 
 `origin` - URL of any repository (whether folked or not) that you own or can directly make changes to is called as origin URL
 
-`upstream` - URL from where a project has been forked is known as upstream URL
+`upstream` - URL from where a project has been forked is known as upstream URL. By setting upstream in git, the local branches can track the remote branches. This makes pulling changes from the remote repository very easy
 
 ## Status
 

@@ -243,6 +243,10 @@ To push changes, specify your URL (origin) and the branch you want to push chang
 git push origin branchName
 ```
 
+## Pulling changes
+
+### Set upstream tag
+
 To push changes and specify an upstream for further argument less push / pull commands, use the `--set-upstream` or the shorthand `-u` tag. This sets the upstream association for any future push/pull attempts automatically.
 
 ```
@@ -251,4 +255,12 @@ git push -u origin branchName
 
 ## Contributing to Open Source
 
-_yet to be added_
+_This section describes git and ways to use it for contributing to open source. **This section requires improvement**_
+
+### Open source and forking
+
+You do not have permissions to make changes to a repository that you do not own / not a part of. In order you contribute, you should create a copy of that repository that you will own that is, a fork. You can make changes to your fork and then open pull request to push those changes to the original repository (or upstream).
+
+### Open source and working with branches
+
+There can be **only one open pull request** per branch. When you keep making changes on the same branch

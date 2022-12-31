@@ -73,7 +73,7 @@ git branch -M main
 6. Add your remote URL (origin). You can find your remote URL from the "quick setup" screen right after you create an empty repository from Github
 
 ```
-git remote add origin yourLinkHere
+git remote add origin origin-url-here
 ```
 
 7. Push changes to remote
@@ -109,9 +109,9 @@ Visit [this stackoverflow answer](https://stackoverflow.com/questions/3689838/wh
 
 ## Origin and upstream URLs conventions
 
-`origin` - URL of any repository (whether folked or not) that you own or can directly make changes to is called as origin URL
+`origin` - URL of any repository (whether folked or not) that you own or can directly make changes to is called as origin URL. Use `git remote add origin origin-URL-here`.
 
-`upstream` - URL from where a project has been forked is known as upstream URL. By setting upstream in git, the local branches can track the remote branches. This makes pulling changes from the remote repository very easy
+`upstream` - URL from where a project has been forked is known as upstream URL. By setting upstream in git, the local branches can track the remote branches. This makes pulling changes from the remote repository very easy. Use `git remote add upstream upstream-url-here`.
 
 ## Status
 

@@ -263,4 +263,6 @@ You do not have permissions to make changes to a repository that you do not own 
 
 ### Open source and working with branches
 
-There can be **only one open pull request** per branch. When you keep making changes on the same branch
+There can be **only one open pull request** per branch. Github will combine all commits into the pull request that's currently open.Therefore, a separate pull request cannot be created for every commit made to a branch.
+
+To fix this, create a new branch for every new feature / change so you can create separate pull requests for being reviewed by other contributors.

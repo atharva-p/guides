@@ -269,6 +269,24 @@ A good use case is when you want to remove commits from a branch or an already o
 
 Downloads data from remote but does not force those changes to be merged into your local work.
 
+Fetch changes from all registered remote URLs and their branches
+
+```
+git fetch --all
+```
+
+Fetch changes of a particular remote (remoteName could be origin, upstream etc). [See here to check](#check-remote-url-attached-to-a-local-repository)
+
+```
+git fetch remoteName
+```
+
+Fetch changes of only a particular branch of a remote
+
+```
+git fetch remoteName branchName
+```
+
 ## Pulling changes
 
 _yet to be added_

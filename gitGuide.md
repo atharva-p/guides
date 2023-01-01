@@ -265,7 +265,9 @@ This is a destructive command as it overwrites any changes in the remote with yo
 
 A good use case is when you want to remove commits from a branch or an already open pull request. You can use [git-reset](#removing-commits-reset) and remove commits from your local git copy. However, git won't allow you to push it to remote because the remote now has extra commits (these are the commits you just removed) that your local copy does not have. You will have to force push to overwrite the remote commits with your version.
 
-## Fetching
+## Fetching changes
+
+Downloads data from remote but does not force those changes to be merged into your local work.
 
 ## Pulling changes
 

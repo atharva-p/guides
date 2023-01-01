@@ -143,7 +143,7 @@ Or to unstaged changes the uncommited and preserve them from all files
 git restore --staged .
 ```
 
-Unstage changes from file and **delete** the uncommited changes or discard the unstaged changes in the working directory
+Unstage changes from file and **delete** the uncommited changes or discard the unstaged changes in the working directory. **_needs verification_**
 
 ```
 git restore filename.fileExtension
@@ -217,6 +217,8 @@ git stash clear
 
 For listing all branches, use `git branch`
 
+For listing all remote branches, use `git branch -r`
+
 For creating a new branch
 
 ```
@@ -243,8 +245,6 @@ To push changes, specify your URL (origin) and the branch you want to push chang
 git push origin branchName
 ```
 
-## Pulling changes
-
 ### Set upstream tag
 
 To push changes and specify an upstream for further argument less push / pull commands, use the `--set-upstream` or the shorthand `-u` tag. This sets the upstream association for any future push/pull attempts automatically.
@@ -252,6 +252,24 @@ To push changes and specify an upstream for further argument less push / pull co
 ```
 git push -u origin branchName
 ```
+
+### Force pushing
+
+Git will prevent any changes to be pushed to remote if the local is using an outdated version of remote's commit history. This ensures that you are not overwriting changes made by someone else because your local was not in sync. [Read this article for more info](https://www.git-tower.com/blog/force-push-in-git/).
+
+```
+git push --force
+```
+
+This is a destructive command as it overwrites any changes in the remote with your local changes so **data could be lost**. Use only when you're sure about what you're doing.
+
+A good use case is when you want to remove commits from a branch or an already open pull request. You can use [git-reset](#removing-commits-reset) and remove commits from your local git copy. However, git won't allow you to push it to remote because the remote now has extra commits (these are the commits you just removed) that your local copy does not have. You will have to force push to overwrite the remote commits with your version.
+
+## Fetching
+
+## Pulling changes
+
+_yet to be added_
 
 ## Contributing to Open Source
 
@@ -266,3 +284,5 @@ You do not have permissions to make changes to a repository that you do not own 
 There can be **only one open pull request** per branch. Github will combine all commits into the pull request that's currently open.Therefore, a separate pull request cannot be created for every commit made to a branch.
 
 To fix this, create a new branch for every new feature / change so you can create separate pull requests for being reviewed by other contributors.
+
+### Making local repository up to date with remote

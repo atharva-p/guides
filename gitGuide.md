@@ -299,9 +299,19 @@ Git has a default disposition of keeping data unless it’s explicitly thrown aw
 
 Pruning is sort of a garbage collection but for commits that git performs. [See here for more info](https://www.atlassian.com/git/tutorials/git-prune#:~:text=The%20git%20prune%20command%20is,is%20generally%20not%20executed%20directly.)
 
+## Merging
+
+Merging will occur into the current branch and the target branch (branched passed to the merge command) remains unaffected
+
+```
+git merge branch-name
+```
+
+[See here](https://www.atlassian.com/git/tutorials/using-branches/git-merge) for more information on merging and it's types
+
 ## Pulling changes
 
-_yet to be added_
+`git pull` is a combination of `git fetch` followed by `git merge`
 
 ## Contributing to Open Source
 

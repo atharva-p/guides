@@ -289,6 +289,16 @@ Fetch changes from all registered remote URLs and their branches
 git fetch --all
 ```
 
+Fetch all changes, but before fetching, remove any remote-tracking references that no longer exist on the remote
+
+```
+git fetch --all --prune
+```
+
+Git has a default disposition of keeping data unless it’s explicitly thrown away; this extends to holding onto local references to branches on remotes that have themselves deleted those branches.
+
+Pruning is sort of a garbage collection but for commits that git performs. [See here for more info](https://www.atlassian.com/git/tutorials/git-prune#:~:text=The%20git%20prune%20command%20is,is%20generally%20not%20executed%20directly.)
+
 ## Pulling changes
 
 _yet to be added_

@@ -1,4 +1,4 @@
-# Markdown Guide
+# Markdown
 
 ## Headings and paragraphs
 

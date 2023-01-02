@@ -82,6 +82,14 @@ git remote add origin origin-url-here
 git push --set-upstream origin main
 ```
 
+### Adding a remote URL
+
+Add your remote, upstream and other urls using this command
+
+```
+git remote add URL-name url
+```
+
 ### Check remote URL attached to a local repository
 
 ```

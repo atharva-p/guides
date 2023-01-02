@@ -323,7 +323,14 @@ There are a few ways to acheive this
 
 1. Use the `fetch upstream` button provided by github in your fork and then pull those changes from your github to your local repository.
 
-2. Do it manually on local
+2. Pull directly from upstream to local and then push
+
+```
+git pull upstream main
+git push origin main
+```
+
+3. Long way (i don't know why i added this)
 
 ```
 git checkout main

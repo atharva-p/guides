@@ -4,11 +4,11 @@ _If you find any errors or if you would like to make improvements or add to this
 
 _This is **not** meant for complete beginners to git and is not a substitute for a proper tutorial. This is meant to be used as a quick reference and contains a list of basic commands (that i think are commonly used) with brief discriptions on how to use them._
 
-_An amazing site to learn git in an interactive way is [learnGitBranching](https://learngitbranching.js.org/). You can also try the sandbox version of the same [here](https://learngitbranching.js.org/?NODEMO)_
+_[learn Git Branching](https://learngitbranching.js.org/) is an amazing site to learn git in an interactive way. You can also try the sandbox version of the same [here](https://learngitbranching.js.org/?NODEMO)_
+
+_All commands used are for bash or git-bash_
 
 ## First time setup
-
-If you haven't already, [click here to install git for windows](https://git-scm.com/download/win) from the official git website. Select git bash
 
 ### Set up username
 
@@ -26,17 +26,17 @@ When you use git to perform a task that requires signing in (such as cloning usi
 
 ## Basic terminal commands
 
-_These commands use for git bash and other UNIX based shells_
+_These commands work only for git bash / bash and other UNIX based shells_
 
-`ls` list all files in the directory
+`ls` list all files in the current directory
 
-`ls -all` list all files in the directory including hidden files (like git files)
+`ls -all` list all files in the current directory including hidden files (like git files)
 
 `mkdir` to create a folder
 
 `cd` to change directory (change the folder you're currently viewing in terminal)
 
-`touch filename.fileExtension` to create a new file of the given name and the extension (.md, .txt, etc)
+`touch filename.fileExtension` to create a new file of the given name and the extension (md, txt, etc)
 
 ## Creating a git repository and connecting to remote
 
@@ -64,7 +64,7 @@ git add .
 git commit -m "first commit"
 ```
 
-5. Rename your [master branch to main](https://git-scm.com/docs/git-branch)
+5. [Rename](https://git-scm.com/docs/git-branch) your [master branch to main](https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main)
 
 ```
 git branch -M main
@@ -84,13 +84,13 @@ git push --set-upstream origin main
 
 ### Adding a remote URL
 
-Add your remote, upstream and other urls using this command
+Add your origin, upstream and other remote urls using this command
 
 ```
 git remote add URL-name url
 ```
 
-### Check remote URL attached to a local repository
+### Check remote URLs attached to a local repository
 
 ```
 git remote -v
@@ -107,7 +107,7 @@ git clone pasteYourLinkHere
 
 ## HEAD, working tree and the index
 
-HEAD - pointer that points to a branch or commit that is the the last checked out. When a make a new commit, the HEAD will be updated to point at the new commit. (\*) symbol denotes the HEAD
+HEAD - pointer that points to a branch or commit that is the the last checked out. When a new commit is made, the HEAD will be updated to point at the new commit. `*` symbol denotes the HEAD
 
 Working tree - Files that you are currently working on
 
@@ -117,9 +117,9 @@ Visit [this stackoverflow answer](https://stackoverflow.com/questions/3689838/wh
 
 ## Origin and upstream URLs conventions
 
-`origin` - URL of any repository (whether folked or not) that you own or can directly make changes to is called as origin URL. Use `git remote add origin origin-URL-here`.
+`origin` - URL of any remote repository (whether folked or not) that you own or can directly make changes to is called origin URL. Use `git remote add origin origin-URL-here`.
 
-`upstream` - URL from where a project has been forked is known as upstream URL. By setting upstream in git, the local branches can track the remote branches. This makes pulling changes from the remote repository very easy. Use `git remote add upstream upstream-url-here`.
+`upstream` - URL from where a project has been forked is known as upstream URL. By setting upstream in git, the local branches can track the remote upstream branches. This makes pulling changes from the upstream repository very easy. Use `git remote add upstream upstream-url-here`.
 
 ## Difference between `main`, `origin main` and `origin/main`
 
@@ -181,8 +181,6 @@ To automatically stage files that have been modified and then commit, use the `-
 git commit -a -m "your commit message here"
 ```
 
-To see all commits, use `git log`
-
 ### Removing commits [(reset)](https://git-scm.com/docs/git-reset)
 
 To remove commits without losing changes made in them, use the commitID for the commit you want to reset to, and the reset command. Changes from the removed commits will move to the unstaged area
@@ -197,7 +195,7 @@ To remove commits and delete changes in them, use the commitID for the commit yo
 git reset --hard commitID
 ```
 
-If you do not pass a commitID the command will default to using the commit on the branch that the head is pointing to. Additionally, a reference such as `upstream/main` can also be passed instead of a commitID
+If you do not pass a commitID the reset command will default to using the lastest commit on the branch that the head is pointing to. Additionally, a branch reference such as `upstream/main` or any other branch name can also be passed instead of a commitID
 
 ### Removing changes of commits while preserving the history (revert)
 
@@ -205,9 +203,9 @@ _yet to be added_
 
 ## Reset, restore and revert
 
-`revert` - is about making a new commit that reverts the changes made by other commits.
+`revert` - is about making a new commit that reverts the changes made by other commits and preserves previous commits in history.
 
-`restore` - is about restoring files in the working tree from either the index or another commit. This command does not update your branch. The command can also be used to restore files in the index from another commit.
+`restore` - is about restoring files in the working tree from either the index or another commit. This command does not update your branch. The command can also be used to unstage changes
 
 `reset` - is about updating your branch, moving the tip in order to add or remove commits from the branch. This operation changes the commit history.
 
@@ -245,7 +243,7 @@ For creating a new branch
 git branch branchName
 ```
 
-For deleting an existing branch, use `--delete` tag or the `-d` shorhand
+For deleting an existing branch, use `--delete` tag or the `-d` shorthand
 
 ```
 git branch -d branchName
@@ -281,15 +279,15 @@ Git will prevent any changes to be pushed to remote if the local is using an out
 git push --force
 ```
 
-This is a destructive command as it overwrites any changes in the remote with your local changes so **data could be lost**. Use only when you're sure about what you're doing.
+This is a destructive command as it overwrites any changes in the remote with your local changes so **data in remote that was not in your local could be lost**. Use only when you're sure about what you're doing.
 
-A good use case is when you want to remove commits from a branch or an already open pull request. You can use [git-reset](#removing-commits-reset) and remove commits from your local git copy. However, git won't allow you to push it to remote because the remote now has extra commits (these are the commits you just removed) that your local copy does not have. You will have to force push to overwrite the remote commits with your version.
+A good use case is when you want to remove commits from a branch or an already open pull request. You can use [git-reset](#removing-commits-reset) and remove commits from your local git repo. However, git won't allow you to push it to remote because the remote now has extra commits (these are the commits you just removed) that your local repo does not have. You will have to force push to overwrite the remote commits with your version.
 
 ## Fetching changes
 
 Downloads data from remote but does not force those changes to be merged into your local work.
 
-Fetch changes of a particular remote (remoteName could be origin, upstream etc). [See here on how to check URLs connected to your local](#check-remote-url-attached-to-a-local-repository)
+Fetch changes of a particular remote URL (remoteName could be origin, upstream etc). [See here on how to check URLs connected to your local](#check-remote-url-attached-to-a-local-repository)
 
 ```
 git fetch remoteName
@@ -315,11 +313,11 @@ git fetch --all --prune
 
 Git has a default disposition of keeping data unless it’s explicitly thrown away; this extends to holding onto local references to branches on remotes that have themselves deleted those branches.
 
-Pruning is sort of a garbage collection but for commits that git performs. [See here for more info](https://www.atlassian.com/git/tutorials/git-prune#:~:text=The%20git%20prune%20command%20is,is%20generally%20not%20executed%20directly.)
+Pruning is sort of a garbage collection but for commits. [See here for more info](https://www.atlassian.com/git/tutorials/git-prune#:~:text=The%20git%20prune%20command%20is,is%20generally%20not%20executed%20directly.)
 
 ## Merging
 
-Merging will occur into the current branch and the target branch (branched passed to the merge command) remains unaffected
+Merging will occur into the current branch. The target branch (branched passed to the merge command or the `branch-name` here) remains unaffected
 
 ```
 git merge branch-name
@@ -329,7 +327,7 @@ git merge branch-name
 
 ## Pulling changes
 
-`git pull` is a combination of `git fetch` followed by `git merge`. A pull command to the a branch (let's say main) will be made of the following
+`git pull` is a combination of `git fetch` followed by `git merge`. A pull command to the a branch (let's say main) will be internally made of the following commands
 
 ```
 git fetch origin main
@@ -358,7 +356,7 @@ _This section describes git and ways to use it for contributing to open source. 
 
 ### Open source and forking
 
-You do not have permissions to make changes to a repository that you do not own / not a part of. In order you contribute, you should create a copy of that repository that you will own that is, a fork. You can make changes to your fork and then open pull request to push those changes to the original repository (or upstream).
+You do not have permissions to make changes to a repository that you do not own / are not a part of. In order you contribute, you should create a copy of that repository that you will own, that is, a fork. You can make changes to your fork and then open pull requests to push those changes to the original repository (or upstream).
 
 ### Open source and working with branches
 
@@ -372,7 +370,7 @@ There are a few ways to acheive this
 
 1. Use the `fetch upstream` button provided by github in your fork and then pull those changes from your github to your local repository.
 
-2. Pull directly from upstream to local and then push
+2. Pull directly from upstream to local and then push to your fork
 
 ```
 git pull upstream main

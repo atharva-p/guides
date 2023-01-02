@@ -147,19 +147,21 @@ To stage all files that have been modified
 git add .
 ```
 
-### Unstage (restore)
+### Unstage [(restore)](https://git-scm.com/docs/git-restore)
 
 ```
 git restore --staged filename.fileExtension
 ```
 
-Or to unstaged changes the uncommited and preserve them from all files
+Or to unstage changes from all files
 
 ```
 git restore --staged .
 ```
 
-Unstage changes from file and **delete** the uncommited changes or discard the unstaged changes in the working directory. **_needs verification_**
+Unstage and **delete the unstaged changes**
+
+[Push it to stash and clear it](#stash) or
 
 ```
 git restore filename.fileExtension
@@ -181,7 +183,7 @@ git commit -a -m "your commit message here"
 
 To see all commits, use `git log`
 
-### Removing commits (reset)
+### Removing commits [(reset)](https://git-scm.com/docs/git-reset)
 
 To remove commits without losing changes made in them, use the commitID for the commit you want to reset to, and the reset command. Changes from the removed commits will move to the unstaged area
 

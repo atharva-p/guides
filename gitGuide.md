@@ -179,7 +179,7 @@ To remove commits and delete changes in them, use the commitID for the commit yo
 git reset --hard commitID
 ```
 
-If you do not pass a commitID the command will default to using the commit on the branch that the head is pointing to
+If you do not pass a commitID the command will default to using the commit on the branch that the head is pointing to. Additionally, a reference such as `upstream/main` can also be passed instead of a commitID
 
 ### Removing changes of commits while preserving the history (revert)
 
@@ -311,7 +311,11 @@ git merge branch-name
 
 ## Pulling changes
 
-`git pull` is a combination of `git fetch` followed by `git merge`
+`git pull` is a combination of `git fetch` followed by `git merge`. By default, this uses the branch tracked by `--set-upstream` tag set during [git push](#pushing-changes) or you can specify exactly from which URL (upstream in the following example) and which branch to pull from
+
+```
+git pull upstream branchName
+```
 
 ## Contributing to Open Source
 

@@ -179,6 +179,8 @@ To remove commits and delete changes in them, use the commitID for the commit yo
 git reset --hard commitID
 ```
 
+If you do not pass a commitID the command will default to using the commit that the head is pointing to
+
 ### Removing changes of commits while preserving the history (revert)
 
 _yet to be added_
@@ -269,12 +271,6 @@ A good use case is when you want to remove commits from a branch or an already o
 
 Downloads data from remote but does not force those changes to be merged into your local work.
 
-Fetch changes from all registered remote URLs and their branches
-
-```
-git fetch --all
-```
-
 Fetch changes of a particular remote (remoteName could be origin, upstream etc). [See here to check](#check-remote-url-attached-to-a-local-repository)
 
 ```
@@ -285,6 +281,12 @@ Fetch changes of only a particular branch of a remote
 
 ```
 git fetch remoteName branchName
+```
+
+Fetch changes from all registered remote URLs and their branches
+
+```
+git fetch --all
 ```
 
 ## Pulling changes

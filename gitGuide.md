@@ -113,9 +113,17 @@ Visit [this stackoverflow answer](https://stackoverflow.com/questions/3689838/wh
 
 `upstream` - URL from where a project has been forked is known as upstream URL. By setting upstream in git, the local branches can track the remote branches. This makes pulling changes from the remote repository very easy. Use `git remote add upstream upstream-url-here`.
 
-## Status
+## Difference between `main`, `origin main` and `origin/main`
 
-To check status of your git repository, use `git status`
+`main` - your local branch. For example, `git reset main` uses your local main branch.
+
+`origin main` - this is the main branch on your remote URL (named origin). For example, `git fetch origin main` will pull changes from the main branch on remote
+
+`origin/main` - **local copy** of your main branch on remote. For example, after your fetch from remote, [git updates your local copy of remote with the actual remote branch](https://www.atlassian.com/git/tutorials/syncing/git-fetch#:~:text=In%20review%2C%20git%20fetch%20is,of%20collaborative%20git%20work%20flows.). You can then merge that to your current branch by `git merge origin/main`
+
+## Status and logs
+
+To check status of your git repository, use `git status`. To check commit history, use `git log`
 
 ## Staging changes
 
@@ -311,7 +319,14 @@ git merge branch-name
 
 ## Pulling changes
 
-`git pull` is a combination of `git fetch` followed by `git merge`. By default, this uses the branch tracked by `--set-upstream` tag set during [git push](#pushing-changes) or you can specify exactly from which URL (upstream in the following example) and which branch to pull from
+`git pull` is a combination of `git fetch` followed by `git merge`. A pull command to the a branch (let's say main) will be made of the following
+
+```
+git fetch origin main
+git merge origin/main
+```
+
+By default, this uses the branch tracked by `--set-upstream` tag set during [git push](#pushing-changes) or you can specify exactly from which URL (upstream in the following example) and which branch to pull from
 
 ```
 git pull upstream branchName

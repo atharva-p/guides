@@ -359,7 +359,7 @@ git pull upstream main
 git push origin main
 ```
 
-3. Long way (i don't know why i added this)
+3. Long way using fetch and reset (i don't know why i added this)
 
 ```
 git checkout main

@@ -1,4 +1,4 @@
-# Git Guide
+# Git
 
 _If you find any errors or if you would like to make improvements or add to this, **please consider contributing** by opening pull requests_
 

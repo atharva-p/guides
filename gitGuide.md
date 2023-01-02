@@ -340,6 +340,16 @@ By default, this uses the branch tracked by `--set-upstream` tag set during [git
 git pull upstream branchName
 ```
 
+## Rebasing
+
+Rebasing is the process of moving or combining a sequence of commits to a new base commit.
+
+```
+git rebase -i commitID
+```
+
+`-i` signifies interactive mode, all commits above the commitID will be available for rebasing
+
 ## Contributing to Open Source
 
 _This section describes git and ways to use it for contributing to open source. **This section requires improvement**_

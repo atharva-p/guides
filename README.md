@@ -6,7 +6,6 @@ _If you find any errors or if you would like to make improvements or add to this
 
 <!-- index table -->
 
-| Reference                        | Description                                                |
-| -------------------------------- | ---------------------------------------------------------- |
-| **[Git](./gitref.md)**           | Basic commands with brief descriptions on how to use them. |
-| **[Markdown](./markdownref.md)** | Basic markdown syntax for similar creations to this        |
+| Reference              | Description                                                |
+| ---------------------- | ---------------------------------------------------------- |
+| **[Git](./gitref.md)** | Basic commands with brief descriptions on how to use them. |

@@ -179,7 +179,7 @@ To remove commits and delete changes in them, use the commitID for the commit yo
 git reset --hard commitID
 ```
 
-If you do not pass a commitID the command will default to using the commit that the head is pointing to
+If you do not pass a commitID the command will default to using the commit on the branch that the head is pointing to
 
 ### Removing changes of commits while preserving the history (revert)
 
@@ -271,7 +271,7 @@ A good use case is when you want to remove commits from a branch or an already o
 
 Downloads data from remote but does not force those changes to be merged into your local work.
 
-Fetch changes of a particular remote (remoteName could be origin, upstream etc). [See here to check](#check-remote-url-attached-to-a-local-repository)
+Fetch changes of a particular remote (remoteName could be origin, upstream etc). [See here on how to check URLs connected to your local](#check-remote-url-attached-to-a-local-repository)
 
 ```
 git fetch remoteName
@@ -317,4 +317,18 @@ There can be **only one open pull request** per branch. Github will combine all 
 
 To fix this, create a new branch for every new feature / change so you can create separate pull requests for being reviewed by other contributors.
 
-### Making local repository up to date with remote
+### Making your own fork up to date with upstream
+
+There are a few ways to acheive this
+
+1. Use the `fetch upstream` button provided by github in your fork and then pull those changes from your github to your local repository.
+
+2. Do it manually on local
+
+```
+git checkout main
+git fetch --all --prune
+git reset --hard upstream/main
+git log (to verify)
+git push origin main
+```

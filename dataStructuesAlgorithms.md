@@ -25,11 +25,17 @@ _This is a reference for data structures and algorithms made for the [Java + DSA
 
 ### Stack vs heap
 
+**_c++ implementation_**
+
 https://courses.engr.illinois.edu/cs225/fa2022/resources/stack-heap/
 
 1. Stack - Stores local variables (and the data associated with the local variables). AFter a function returns, the stack memory associated to that functions and all of it's variables are deallocated. **A common mistake is to return a pointer to a stack variable from a helper function and using that returned pointer elsewhere.**
 
 2. Heap - dynamic memory for programmers to allocate. **Unlike stack memory, heap memory is allocated explicitly by programmers and it won’t be deallocated until it is explicitly freed.**
+
+**_Java implementation_**
+
+yet to be added
 
 ### Prime number algorithm optimization
 
@@ -54,3 +60,17 @@ Java is both a compiled as well as an interpreted programming language. [Compile
 2. This compiler compiles the source code into `.class` bytecode which is an intermediate code that is platform independent
 
 3. The intermediate bytecode is then executed line by line by the interpreter.
+
+### Compiling and running file
+
+To compile file, use the following command. This will create a compiled bytecode `.class` file
+
+```
+javac filename.java
+```
+
+To run the compiled `.class` file using the interpreter, use the following command with the name of the `.class` file.
+
+```
+java filename
+```

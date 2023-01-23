@@ -53,6 +53,8 @@ print "prime"
 
 ### Java Architecture
 
+In java, everything extends into an object class.
+
 Java is both a compiled as well as an interpreted programming language. [Compiled vs interpreted](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/)
 
 1. The `.java` file which is human readable (soure code) is first compiled by the compiler
@@ -74,3 +76,53 @@ To run the compiled `.class` file using the interpreter, use the following comma
 ```
 java filename
 ```
+
+### Basic file structure
+
+```
+public class Demo {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+}
+```
+
+If the file name is `Demo.java` then the class inside the file should also be named `Demo`. Any other name will not work. The `main`(from psvm) function is the entry point of any java program and therefore is necessary
+
+`public` from `public static void main(String[] args)` is an access specifier. Since `main` is the entry point and without it the program will not run, it is necessary to make it accessible from anywhere, hence it should be specified public.
+
+`static` is used to run the `main` function without creating an object of `class Demo`. In java, everything is based on a class-object relationship. Since main is the entry point, we cannot create an object of `class demo`. In order to create an object, we need to first run the code that creates the object and that is not possible because main is where the program starts running. We use `static` keyword to solve this problem.
+
+`void` is the return type of the main function.
+
+### Classes convention
+
+All class names should begin with capital letters. For example, `Scanner` import used for taking inputs is actually a pre defined class.
+
+### Taking inputs in java
+
+Use the Scanner class to take inputs in java. Do not forget to import the Scanner class using `import java.util.Scanner;`
+
+_This code will go into psvm_
+
+```
+Scanner input = new Scanner(System.in);
+int number = input.nextInt();
+input.close();
+```
+
+### Primitive data types
+
+String is NOT primitive data type. It is a class. Following are some primitive data types.
+
+```
+int number = 62;
+char letter = 'a';
+float floatingNumber = 98.34f;
+double largeDecimalNumbers = 34337.3433;
+long largeInteger = 34329382329328L;
+boolean check = false; // or true
+```
+
+### Literals and identifiers
+
+A **literal** is a notation for representing a fixed constant value. For example, in `int number = 42` 42 is the literal because 42 is literally 42, a constant. Whereas the variable `number` here is the **identifier**. Methods are also identifiers.

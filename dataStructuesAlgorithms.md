@@ -2,7 +2,7 @@
 
 _This is a reference for data structures and algorithms made for the [Java + DSA + Interview Preparation Course](https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)_
 
-## Introduction to programming (Video number 5-8)
+## (Video 5-8) Introduction to programming
 
 ### Types of languages
 
@@ -126,3 +126,25 @@ boolean check = false; // or true
 ### Literals and identifiers
 
 A **literal** is a notation for representing a fixed constant value. For example, in `int number = 42` 42 is the literal because 42 is literally 42, a constant. Whereas the variable `number` here is the **identifier**. Methods are also identifiers.
+
+### Typecasting and promotions
+
+A widdening type cast (done automatically by java) is when a smaller type is converted into a larger type. For example, if a float is expected as input and as int is provided instead, java will automatically convert the int to a float.
+
+A narrowing type cast is when a larger type is to be converted to a smaller type. This is not done automatically and needs to be done manually using `(typeToCastInto)(data)`
+
+Types should be compatible in order to cast them. A string cannot be cast into an int
+
+#### Automatic type promotion in expressions
+
+If the larger value being cast into smaller type cannot fit, java will use `(largerValue) % (max value of smaller type)`. For example,
+
+```
+int a = 257;
+byte b = (byte)(a); // max value of byte is 256, so java will use 257 % 256
+System.out.println(b);
+
+//output of this will be 1
+```
+
+If an expression uses two different data types, java will use widdening (if compatible) to compute the expression. For example, while carrying out `3 * 5.6` java will convert the entire expression into float and the output will be in float.

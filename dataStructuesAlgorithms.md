@@ -148,3 +148,17 @@ System.out.println(b);
 ```
 
 If an expression uses two different data types, java will use widdening (if compatible) to compute the expression. For example, while carrying out `3 * 5.6` java will convert the entire expression into float and the output will be in float.
+
+## (Video 9) Conditionals
+
+### When to use a for loop and when to use a while loop
+
+**For loop** - Use this when you know how many times the loop is going to run. For example, print the first 10 numbers
+
+**While loop** - Use this when you don't know how many times the loop will run. For example, take input from user until the user presses a particular button.
+
+### Difference between do while and while loop
+
+**do while** - In a do while loop, the loop will execute at least once and then the while condition will be checked. Use in cases where running the loop at least once is a requirement.
+
+**while** - Loop may not even run once if the while condition fails

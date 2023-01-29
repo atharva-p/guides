@@ -125,7 +125,7 @@ boolean check = false; // or true
 
 ### Literals, identifiers, references and objects
 
-_update this again_
+_redo this entire part again_
 
 https://java-programming.mooc.fi/part-5
 
@@ -281,3 +281,25 @@ switch(expression) {
 ### Nested switch cases
 
 A switch case can also be added as a case in another switch case.
+
+## (Video 11) Functions / Methods
+
+### Syntax of a method
+
+```
+access_modifer return_type name(){
+    // function body
+}
+```
+
+If the function is being accessed without creating an object of a class, it needs to be declared `static`.
+
+Declare a function with `public static void name(){}` if static. `public` is optional because the default is `public`.
+
+### Passing to a method / function
+
+There is **no pass by reference in java** unlike in C/C++ and other languages. Only pass by value is allowed.
+
+#### Pass by value
+
+Say for example we have a method `changeName(String name)` and we pass `changeName(name)` to it. Java will actually just pass a copy of the object stored in `name` and hence any changes made in the `changeName` function will not reflect in `name`.

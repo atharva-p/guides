@@ -195,6 +195,8 @@ A while loop also sometimes improves code readability
 
 ### Print reverse of a number
 
+#### My solution
+
 ```
 1. input n
 2. placeExponent = -1, temp = n, ans = 0, digit = 0;
@@ -211,5 +213,19 @@ A while loop also sometimes improves code readability
             n = n / 10;
             places = places / 10;
     }
-6. print reverse
+6. print ans
+```
+
+#### Best solution
+
+```
+1. input number
+2. ans = 0, digit = 0;
+3. reverse number
+    while(n != 0){
+            digit = n % 10;
+            ans = ans * 10 + digit;
+            n = n / 10;
+    }
+4. print ans
 ```

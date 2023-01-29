@@ -131,6 +131,8 @@ https://java-programming.mooc.fi/part-5
 
 A **literal** is a notation for representing a fixed constant value. For example, in `int number = 42` 42 is the literal because 42 is literally 42, a constant. Whereas the variable `number` here is the identifier.
 
+**[Constants vs literals](https://stackoverflow.com/a/44767471/16465011)**.
+
 **Identifier** - All Java variables must be identified with unique names. Identifiers in Java are symbolic names used for identification. They can be a class name, variable name, method name, package name, constant name, and more. Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume)
 
 **Reference** -
@@ -237,3 +239,45 @@ A while loop also sometimes improves code readability
     }
 4. print ans
 ```
+
+## (Video 10) Switch statements + nested cases
+
+### `.equals`
+
+Use the `.equals` method to compare if two string are equal. Using `==` may give incorrect results.
+
+Suppose we have a string "test" in two separate objects. If we try to compare "test" using `==` we may get false. This is because `==` compares the references to objects (in this case, two different objects hence will give false). Comparing using `.equals` method will return true since it actually checks the value and not the reference.
+
+### Syntax of switch
+
+`expression` and the cases should be of the same data type and must be either a constant or a literal. For example, if `expression` is a string then case should be a string (`case "Apple":`). Cases can also be blank (`case one: //nothing` is also allowed).
+
+```
+switch(expression) {
+    // cases
+    case one:
+        // case code here
+        break;
+    case two:
+        // case code here
+        break;
+    default:
+        // case code here
+}
+```
+
+### Enhanced switch syntax
+
+A better switch syntax, break statements are not required and increases readability.
+
+```
+switch(expression) {
+    case one -> System.out.println("case code here");
+    case two -> // case code here;
+    default -> // default case here;
+}
+```
+
+### Nested switch cases
+
+A switch case can also be added as a case in another switch case.

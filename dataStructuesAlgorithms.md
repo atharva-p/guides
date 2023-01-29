@@ -157,8 +157,59 @@ If an expression uses two different data types, java will use widdening (if comp
 
 **While loop** - Use this when you don't know how many times the loop will run. For example, take input from user until the user presses a particular button.
 
+A while loop also sometimes improves code readability
+
 ### Difference between do while and while loop
 
 **do while** - In a do while loop, the loop will execute at least once and then the while condition will be checked. Use in cases where running the loop at least once is a requirement.
 
 **while** - Loop may not even run once if the while condition fails
+
+### Print the nth fibonaci number
+
+```
+1. take input
+2. num1 = 0, num2 = 0, sum = 0
+3. print num1 and num2
+3. for(int i = 2; i <= target; i++){
+    sum = num1 + num2;
+    num1 = num2
+    num2 = sum
+}
+4. print sum
+```
+
+### Find occurrence of a digit in a number
+
+```
+1. input n and target
+2. digit = 0, count = 0;
+3. while(n != 0){
+    digit = n % 10;
+    if(digit == target)
+        count++;
+    n = n / 10;
+}
+4. print count
+```
+
+### Print reverse of a number
+
+```
+1. input n
+2. placeExponent = -1, temp = n, ans = 0, digit = 0;
+3. figure out placeExponent
+    while(temp != 0){
+            placeExponent++;
+            temp = temp / 10;
+    }
+4. places = 10 ^ placeExponent // use pow function
+5. reverse number
+    while(n != 0){
+            digit = n % 10;
+            ans = ans + places * digit;
+            n = n / 10;
+            places = places / 10;
+    }
+6. print reverse
+```

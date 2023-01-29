@@ -123,9 +123,17 @@ long largeInteger = 34329382329328L;
 boolean check = false; // or true
 ```
 
-### Literals and identifiers
+### Literals, identifiers, references and objects
 
-A **literal** is a notation for representing a fixed constant value. For example, in `int number = 42` 42 is the literal because 42 is literally 42, a constant. Whereas the variable `number` here is the **identifier**. Methods are also identifiers.
+_update this again_
+
+https://java-programming.mooc.fi/part-5
+
+A **literal** is a notation for representing a fixed constant value. For example, in `int number = 42` 42 is the literal because 42 is literally 42, a constant. Whereas the variable `number` here is the identifier.
+
+**Identifier** - All Java variables must be identified with unique names. Identifiers in Java are symbolic names used for identification. They can be a class name, variable name, method name, package name, constant name, and more. Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume)
+
+**Reference** -
 
 ### Typecasting and promotions
 

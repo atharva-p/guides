@@ -292,7 +292,7 @@ access_modifer return_type name(){
 }
 ```
 
-If the function is being accessed without creating an object of a class, it needs to be declared `static`.
+If the function is being accessed without creating an object of a class, it needs to be declared `static`. A function being called from a `static` function should also be declared `static`.
 
 Declare a function with `public static void name(){}` if static. `public` is optional because the default is `public`.
 
@@ -302,4 +302,4 @@ There is **no pass by reference in java** unlike in C/C++ and other languages. O
 
 #### Pass by value
 
-Say for example we have a method `changeName(String name)` and we pass `changeName(name)` to it. Java will actually just pass a copy of the object stored in `name` and hence any changes made in the `changeName` function will not reflect in `name`.
+Say for example we have a method `changeName(String name)` and we pass `changeName(name)` to it. Java will actually just pass a copy of the object stored in `name` and hence any changes made to `name` in the `changeName` function will not reflect in `name`.

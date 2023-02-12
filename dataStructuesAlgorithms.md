@@ -248,6 +248,12 @@ Use the `.equals` method to compare if two string are equal. Using `==` may give
 
 Suppose we have a string "test" in two separate objects. If we try to compare "test" using `==` we may get false. This is because `==` compares the references to objects (in this case, two different objects hence will give false). Comparing using `.equals` method will return true since it actually checks the value and not the reference.
 
+```
+String word1 = "hello";
+String word2 = "hello";
+System.out.println(word1.equals(word2)); // will print true because both strings are equal.
+```
+
 ### Syntax of switch
 
 `expression` and the cases should be of the same data type and must be either a constant or a literal. For example, if `expression` is a string then case should be a string (`case "Apple":`). Cases can also be blank (`case one: //nothing` is also allowed).

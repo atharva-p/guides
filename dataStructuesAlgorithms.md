@@ -310,7 +310,7 @@ There is **no pass by reference in java** unlike in C/C++ and other languages. O
 
 Say for example we have a method `changeName(String inputName)` and we pass `changeName(name)` to it.
 
-When you change `name` inside of `changeName` scope, `name` will just point to the object (memory space) of changed version and it stops referencing to the original.
+When you change `inputName` inside of `changeName` scope, `inputName` will just point to a new object (memory space) and it will stop referencing to the old object
 
 ![PassByValue](./assets/passByValue.png)
 

@@ -323,3 +323,7 @@ In case of primitives, a copy of the object is directly given to the argument va
 Suppose we have an array `int[] testarr = {1, 10, 23, 45, 78}` and we have a `changeArray(int[] nums)` function. Inside `changeArray` if we write `nums[0] = 100` this will actually change the value of the first index of `testarr` since the function argument array `nums` and `testarr` point to the same object
 
 ![ArrayExample](./assets/passByValueArray.png)
+
+Even though this does feel like call by reference, it we are not passing the memory address of the object.
+
+[They are no pointers in java](https://stackoverflow.com/questions/2629357/does-java-have-pointers).

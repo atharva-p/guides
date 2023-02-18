@@ -324,6 +324,6 @@ Suppose we have an array `int[] testarr = {1, 10, 23, 45, 78}` and we have a `ch
 
 ![ArrayExample](./assets/passByValueArray.png)
 
-Even though this does feel like call by reference, it we are not passing the memory address of the object.
+Even though this does feel like call by reference, it is not since we are not passing the memory address of the object.
 
 [They are no pointers in java](https://stackoverflow.com/questions/2629357/does-java-have-pointers).

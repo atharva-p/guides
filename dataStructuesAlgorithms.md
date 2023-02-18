@@ -308,4 +308,18 @@ There is **no pass by reference in java** unlike in C/C++ and other languages. O
 
 #### Pass by value
 
-Say for example we have a method `changeName(String name)` and we pass `changeName(name)` to it. Java will actually just pass a copy of the object stored in `name` and hence any changes made to `name` in the `changeName` function will not reflect in `name`.
+Say for example we have a method `changeName(String inputName)` and we pass `changeName(name)` to it.
+
+When you change `name` inside of `changeName` scope, `name` will just point to the object (memory space) of changed version and it stops referencing to the original.
+
+![PassByValue](./assets/passByValue.png)
+
+As a result, the original `name` remains unaffected.
+
+In case of primitives, a copy of the object is directly given to the argument variable and it just points at it's own new object (instead of the argument variable pointing to the original)
+
+#### When the same object is changed, it changes everywhere.
+
+Suppose we have an array `int[] testarr = {1, 10, 23, 45, 78}` and we have a `changeArray(int[] nums)` function. Inside `changeArray` if we write `nums[0] = 100` this will actually change the value of the first index of `testarr` since the function argument array `nums` and `testarr` point to the same object
+
+![ArrayExample](./assets/passByValueArray.png)

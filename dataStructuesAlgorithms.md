@@ -364,3 +364,25 @@ static void fun(datatype ...varArg_name) {
 // also possible
 static void fun(datatype var1, datatype var2, datatype ...v){}
 ```
+
+## (Video 12) Array and arraylist
+
+### Arrays
+
+Collection of data of the same type.
+
+```
+// syntax
+datatype[] variable_name = new datatype[size];
+// this also works
+datatype[] variable_name = {data here};
+
+int[] testarr; // declaration of array
+testarr = new int[5]; // initialization (creates an object in the heap)
+```
+
+Declaraton of array happens at compile time. Initialization of array happens at runtime(dynamic memory allocation).
+
+Objects in heap in java are stored non contiguously.
+
+The `new` keyword creates new objects. Int Arrays initialized using new have the default value of 0. String arrays are initialized to null.

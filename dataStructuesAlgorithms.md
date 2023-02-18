@@ -333,3 +333,22 @@ Even though this does feel like call by reference, it is not since we are not pa
 Methods - Variables inside a method can only be accessed from that method only
 
 Blocks and functions - Anything initilized outside the block can be used inside, but anything initialized inside the block cannot be used outside (same for loops)
+
+### Shadowing
+
+```
+public class Shadowing {
+    static int x = 90; // will be shadowed when int x = 40;
+    public static void main(String args[]) {
+        sout(x); // will print 90
+        int x = 40;
+        sout(x); // will print 40
+        fun();
+    }
+    public static fun(){
+        sout(x); // will print 90 again because global scope
+    }
+}
+```
+
+The first integer (global scoped) is static because it's being used in a static function `main`.

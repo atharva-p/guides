@@ -352,3 +352,15 @@ public class Shadowing {
 ```
 
 The first integer (global scoped) is static because it's being used in a static function `main`.
+
+### Variable length arguments VarArgs
+
+Use varArgs when you do not know how many arguments are being passed to a method.
+
+```
+static void fun(datatype ...varArg_name) {
+    // method body here
+}
+// also possible
+static void fun(datatype var1, datatype var2, datatype ...v){}
+```

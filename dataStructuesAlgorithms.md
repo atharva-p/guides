@@ -327,3 +327,9 @@ Suppose we have an array `int[] testarr = {1, 10, 23, 45, 78}` and we have a `ch
 Even though this does feel like call by reference, it is not since we are not passing the memory address of the object.
 
 [They are no pointers in java](https://stackoverflow.com/questions/2629357/does-java-have-pointers).
+
+### Scope
+
+Methods - Variables inside a method can only be accessed from that method only
+
+Blocks and functions - Anything initilized outside the block can be used inside, but anything initialized inside the block cannot be used outside (same for loops)

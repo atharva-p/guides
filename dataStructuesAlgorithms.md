@@ -245,6 +245,8 @@ A while loop also sometimes improves code readability
 
 ### `.equals`
 
+_needs to be redone_
+
 Use the `.equals` method to compare if two string are equal. Using `==` may give incorrect results.
 
 Suppose we have a string "test" in two separate objects. If we try to compare "test" using `==` we may get false. This is because `==` compares the references to objects (in this case, two different objects hence will give false). Comparing using `.equals` method will return true since it actually checks the value and not the reference.

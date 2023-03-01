@@ -368,6 +368,8 @@ static void fun(datatype ...varArg_name) {
 static void fun(datatype var1, datatype var2, datatype ...v){}
 ```
 
+varArgs are stored as an array so array operations are allowed using the varArg_name.
+
 ## (Video 12) Array and arraylist
 
 ### Arrays

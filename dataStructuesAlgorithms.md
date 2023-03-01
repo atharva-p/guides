@@ -211,13 +211,14 @@ A while loop also sometimes improves code readability
 1. input n
 2. placeExponent = -1, temp = n, ans = 0, digit = 0;
 3. figure out placeExponent
-    while(temp != 0){
-            placeExponent++;
+    do{
             temp = temp / 10;
-    }
-4. places = 10 ^ placeExponent // use pow function
+            placeExponent++;
+    } while(temp != 0);
+
+4. places = 10 ^ placeExponent // use pow function and explicitly typecast into (int) to truncate decimals
 5. reverse number
-    while(n != 0){
+    while(places > 0){
             digit = n % 10;
             ans = ans + places * digit;
             n = n / 10;

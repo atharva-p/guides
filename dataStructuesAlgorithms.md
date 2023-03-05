@@ -35,6 +35,8 @@ https://courses.engr.illinois.edu/cs225/fa2022/resources/stack-heap/
 
 **_Java implementation_**
 
+Primitives are stored in the stack memory only. Non primitives (objects) are stored in the heap memory.
+
 yet to be added
 
 ### Prime number algorithm optimization
@@ -384,10 +386,24 @@ datatype[] variable_name = {data here};
 
 int[] testarr; // declaration of array
 testarr = new int[5]; // initialization (creates an object in the heap)
+
+// String array
+String[] stringArray = new String[3]; // will create an array with 3 strings
 ```
 
 Declaraton of array happens at compile time. Initialization of array happens at runtime(dynamic memory allocation).
 
 Objects in heap in java are stored non contiguously.
 
-The `new` keyword creates new objects. Int Arrays initialized using new keyword have the default value of 0. String arrays are initialized to null.
+The `new` keyword creates new objects. Int Arrays initialized using new keyword have the **default value of 0**. String arrays are **initialized to null.**
+
+`null` is a special literal. It cannot be assigned to primitive data types
+
+### Enhanced for loop (for each loop)
+
+Useful for when you just want to iterate. Suppose we have an integer array with 5 elements.
+
+```
+// iteration to read
+
+```

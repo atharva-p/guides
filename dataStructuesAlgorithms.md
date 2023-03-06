@@ -401,9 +401,15 @@ The `new` keyword creates new objects. Int Arrays initialized using new keyword 
 
 ### Enhanced for loop (for each loop)
 
-Useful for when you just want to iterate. Suppose we have an integer array with 5 elements.
+Useful for when you just want to iterate.
 
 ```
-// iteration to read
-
+// syntax
+for(datatype variableName : arrayName) { // or collectionName
+    // code block
+}
 ```
+
+The `variableName` holds the current element of the `arrayName` in each iteration. The type must match the type of the elements in the arrayName.
+
+[Don't use for each loop to take input. It is only used to read from array, not write to it. Use normal loop instead](https://stackoverflow.com/questions/54691873/how-to-use-for-each-in-java-to-get-input)

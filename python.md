@@ -16,6 +16,8 @@ print("hello there " + input("enter your name")) // will wait for input and prin
 
 Use the `len(variableName or data)` to get the length of a string, int, etc
 
-**Checking types**
+**Checking types and conversions**
+
+Convert to a string using the `str()` function. Similarly use int or float to convert.
 
 You check the type of an entity using `type` function. example, `print(type(entityName))`

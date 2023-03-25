@@ -15,3 +15,30 @@ Use the `len(variableName or data)` to get the length of a string, int, etc
 Convert to a string using the `str()` function. Similarly use `int()` or `float()` to convert.
 
 You check the type of an object/data using `type` function. example, `print(type(entityName))`
+
+## Mathematical operations
+
+**Exponents** use `**` to denote a number as an exponent. For example, `print(2**3)` would print 2^3 that is 8
+
+### Rounding numbers
+
+```
+print(round(8 / 3))   // answer 3
+print(round(8 / 3, 2))    // answer 2.67
+```
+
+The additional 2 will round 8 / 3 to two places afer the decimal
+
+_TODO insert link here_
+
+**Floor division** Use double lashes to do a floor division. The float is automatically rounded off to an integer and returns an integer data type `print(8 // 3)` will print 2
+
+## F strings
+
+Automatically converts data into string and concatenates with the rest of the string. Needs an f before the string
+
+```
+score = 0
+isWinnning = True
+print(f"your score is {score} and you winning boolean is {isWinnign}")
+```

@@ -255,6 +255,14 @@ For switching (or "checking out") branches
 git checkout branchName
 ```
 
+Renaming a branch locally
+
+```
+git branch -m old-name new-name
+```
+
+To update this name change to remote, push the new named branch separately to remote and delete the old branch from remote followed by a [fetch with pruning](#fetching-changes) to update in local.
+
 ## Pushing changes
 
 To push changes, specify your URL (origin) and the branch you want to push changes to

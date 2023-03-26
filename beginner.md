@@ -71,10 +71,36 @@ count = name.count("a") // will return 3
 
 Negative indices can also be used to access list data. A negative index will start counting from the end of the list.
 
-`append(item)` will add to the end of the list. Function takes the item to be added as the argument.
+`append(item)` will add to the end of the list. Function takes onlt one item to be added as the argument.
 
-`extend(list)` will extend the current list with the list that is passed to the function
+`extend(iterable)` will add all the elements of the iterable to the end of the current list.
 
-[Converting strings to lists](https://www.askpython.com/python/string/convert-string-to-list-in-python)
+**Difference between append and extend** - append adds only an element passed to it to the end of the list whereas extend will cycle through the iterable and add all it's elements to the end of the list
 
-You can typecast a **string into a list**. Will return a list with the string characters as its items.
+```
+testList = ["apple", "microsoft"]
+
+testList.append("google")
+print(testList) # will print ["apple", "microsoft", "google"]
+
+testList.extend("google")
+print(testList) # will print ["apple", "microsoft", "g", "o", "o", "g", "l", "e"]
+```
+
+Extend breaks "google" and adds it because it is an iterable. Every character in "google" is added one by one
+
+### [Converting strings to lists](https://www.askpython.com/python/string/convert-string-to-list-in-python)
+
+1. String to a list of strings - Use the `split()` or `rsplit()` functions
+
+2. String to a list of characters
+
+   You can use the `list()` function to return a list from any iterable. It is actually a constructor of the list class
+
+   ```
+   name = "atharva"
+   testList = list(name)
+   print(testlist)
+   ```
+
+   Will return `['a', 't', 'h', 'a', 'r', 'v', 'a']` to testList.

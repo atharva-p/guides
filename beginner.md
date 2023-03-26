@@ -10,6 +10,8 @@ print("hello there " + input("enter your name")) // will wait for input and prin
 
 Use the `len(variableName or data)` to get the length of a string, int, etc
 
+**Printing multiple lines of string** To create strings that span multiple lines, triple single quotes ''' or triple double quotes """ are used to enclose the string.
+
 ## Type conversions
 
 Convert to a string using the `str()` function. Similarly use `int()` or `float()` to convert.

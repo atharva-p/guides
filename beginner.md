@@ -71,11 +71,11 @@ count = name.count("a") // will return 3
 
 Negative indices can also be used to access list data. A negative index will start counting from the end of the list.
 
-`append(item)` will add to the end of the list. Function takes onlt one item to be added as the argument.
+`append(item)` will add to the end of the list. Function takes only one item to be added as the argument.
 
 `extend(iterable)` will add all the elements of the iterable to the end of the current list.
 
-**Difference between append and extend** - append adds only an element passed to it to the end of the list whereas extend will cycle through the iterable and add all it's elements to the end of the list
+**Difference between append and extend** - append adds only the element passed to it to the end of the list whereas extend will cycle through the iterable and add all of it's elements to the end of the list
 
 ```
 testList = ["apple", "microsoft"]

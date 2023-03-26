@@ -1,5 +1,7 @@
 # Beginner level - [Python udemy course](https://www.udemy.com/course/100-days-of-code/)
 
+You can import any python file that you write in the project folder as a module using `import file-name or module-name`
+
 ## Taking input
 
 Use the `input(prompt)` function to take input. It will display prompt and wait for input, afer which the input function will be replaced by what is inputted
@@ -56,3 +58,23 @@ count = name.count("a") // will return 3
 ```
 
 `lower()` is part of [python string methods](https://www.w3schools.com/python/python_ref_string.asp) and `count()` is a part of python list methods
+
+## [Randomization](https://www.w3schools.com/python/module_random.asp)
+
+`randint(a, b)` generates a random number between a and b (both inclusive)
+
+`random(a, b)` generates a floating point number between [0, 1), 1 not being inclusive. Function takes no arguments
+
+`uniform(a, b)` generates a floating point number between a and b (both inclusive)
+
+## [Lists](https://www.w3schools.com/python/python_ref_list.asp)
+
+Negative indices can also be used to access list data. A negative index will start counting from the end of the list.
+
+`append(item)` will add to the end of the list. Function takes the item to be added as the argument.
+
+`extend(list)` will extend the current list with the list that is passed to the function
+
+[Converting strings to lists](https://www.askpython.com/python/string/convert-string-to-list-in-python)
+
+You can typecast a **string into a list**. Will return a list with the string characters as its items.

@@ -29,7 +29,7 @@ print(round(8 / 3, 2))    // answer 2.67
 
 The additional 2 will round 8 / 3 to two places afer the decimal
 
-_TODO insert link here_
+_TODO insert link here after finishing rounding properly_
 
 **Floor division** Use double lashes to do a floor division. The float is automatically rounded off to an integer and returns an integer data type `print(8 // 3)` will print 2
 
@@ -42,3 +42,15 @@ score = 0
 isWinnning = True
 print(f"your score is {score} and you winning boolean is {isWinnign}")
 ```
+
+## Lower() and count()
+
+`lower()` function will make a string lowercase. The `count()` function will return the count of the string or substring passed to it from a list.
+
+```
+name = "Atharva"
+lower = name.lower() // will become "atharva"
+count = name.count("a") // will return 3
+```
+
+`lower()` is part of [python string methods](https://www.w3schools.com/python/python_ref_string.asp) and `count()` is a part of python list methods

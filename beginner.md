@@ -111,3 +111,14 @@ Extend breaks "google" and adds it because it is an iterable. Every character in
    ```
 
    Will return `['a', 't', 'h', 'a', 'r', 'v', 'a']` to testList.
+
+3. List of strings to a list of character strings
+
+```
+testList = ["atharva", "ashish", "patil"]
+# convert to a list of character strings
+charList = list(map(list, testList))
+print(charList)
+```
+
+This will output `[['a', 't', 'h', 'a', 'r', 'v', 'a'], ['a', 's', 'h', 'i', 's', 'h'], ['p', 'a', 't', 'i', 'l']]`

@@ -78,23 +78,34 @@ count = name.count("a") // will return 3
 
 Negative indices can also be used to access list data. A negative index will start counting from the end of the list.
 
-`append(item)` will add to the end of the list. Function takes only one item to be added as the argument.
+`append(item)` will add to the end of the list. Function takes only one item to be added as the argument. If an iterable is passed it will be instead added entirely to the list (unlike extend).
 
 `extend(iterable)` will add all the elements of the iterable to the end of the current list.
 
 **Difference between append and extend** - append adds only the element passed to it to the end of the list whereas extend will cycle through the iterable and add all of it's elements to the end of the list
 
 ```
-testList = ["apple", "microsoft"]
+testList = ["google", "amazon"]
+print(testList)
+# output ['google', 'amazon']
 
-testList.append("google")
-print(testList) # will print ["apple", "microsoft", "google"]
+testList.append("apple")
+print(testList)
+# output ['google', 'amazon', 'apple']
 
-testList.extend("google")
-print(testList) # will print ["apple", "microsoft", "g", "o", "o", "g", "l", "e"]
+anotherList = ["microsoft", "tesla"]
+testList.append(anotherList)
+print(testList)
+# output ['google', 'amazon', 'apple', ['microsoft', 'tesla']]
+
+testList.extend(anotherList)
+print(testList)
+# output ['google', 'amazon', 'apple', ['microsoft', 'tesla'], 'microsoft', 'tesla']
+
+testList.extend("SpaceX")
+print(testList)
+# output ['google', 'amazon', 'apple', ['microsoft', 'tesla'], 'microsoft', 'tesla', 'S', 'p', 'a', 'c', 'e', 'X']
 ```
-
-Extend breaks "google" and adds it because it is an iterable. Every character in "google" is added one by one
 
 ### [Converting strings to lists](https://www.askpython.com/python/string/convert-string-to-list-in-python)
 

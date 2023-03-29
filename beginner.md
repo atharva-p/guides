@@ -10,9 +10,16 @@ Use the `input(prompt)` function to take input. It will display prompt and wait 
 print("hello there " + input("enter your name")) // will wait for input and print hey there input
 ```
 
-Use the `len(variableName or data)` to get the length of a string, int, etc
-
 **Printing multiple lines of string** To create strings that span multiple lines, triple single quotes ''' or triple double quotes """ are used to enclose the string.
+
+### Taking multiple numbers as input
+
+If numbers are to be inputted into a list (eg "1 3 3 5 6") use the following method
+
+```
+# will create a list with the inputted string of numbers
+numbers = list(map(int, inputString.split()))
+```
 
 ## Type conversions
 

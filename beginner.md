@@ -68,9 +68,11 @@ count = name.count("a") // will return 3
 
 ## [Randomization](https://www.w3schools.com/python/module_random.asp)
 
+Import the random module first
+
 `randint(a, b)` generates a random number between a and b (both inclusive)
 
-`random(a, b)` generates a floating point number between [0, 1), 1 not being inclusive. Function takes no arguments
+`random()` generates a floating point number between [0, 1), 1 not being inclusive. Function takes no arguments
 
 `uniform(a, b)` generates a floating point number between a and b (both inclusive)
 

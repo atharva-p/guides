@@ -111,7 +111,7 @@ print(testList)
 
 ### [Converting strings to lists](https://www.askpython.com/python/string/convert-string-to-list-in-python)
 
-1. String to a list of strings - Use the `split()` or `rsplit()` functions
+1. String to a list of strings - Use the `split()` or `rsplit()` functions. These functions will split a string at the specified separator and returns a **list of substrings**
 
 2. String to a list of characters
 
@@ -123,7 +123,7 @@ print(testList)
    print(testlist)
    ```
 
-   Will return `['a', 't', 'h', 'a', 'r', 'v', 'a']` to testList.
+   Will return `['a', 't', 'h', 'a', 'r', 'v', 'a']` to testList. Even though `split()` method also returns a substring, it can only be used in this case when the string is made up of multiple words, since the `split()` function separator argument cannot be empty
 
 3. List of strings to a list of character strings
 
@@ -141,3 +141,5 @@ This will output `[['a', 't', 'h', 'a', 'r', 'v', 'a'], ['a', 's', 'h', 'i', 's'
 Use the `sys.exit()` function from the `sys` module to exit a program.
 
 It takes an optional argument, either an integer or a string. 0 integer indicates successful program termination.
+
+## Loops

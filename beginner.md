@@ -135,3 +135,9 @@ print(charList)
 ```
 
 This will output `[['a', 't', 'h', 'a', 'r', 'v', 'a'], ['a', 's', 'h', 'i', 's', 'h'], ['p', 'a', 't', 'i', 'l']]`
+
+## [Terminating a program](https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/)
+
+Use the `sys.exit()` function from the `sys` module to exit a program.
+
+It takes an optional argument, either an integer or a string. 0 integer indicates successful program termination.

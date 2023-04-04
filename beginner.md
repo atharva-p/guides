@@ -143,3 +143,22 @@ Use the `sys.exit()` function from the `sys` module to exit a program.
 It takes an optional argument, either an integer or a string. 0 integer indicates successful program termination.
 
 ## Loops
+
+### For loop with a range function
+
+```
+for i in range(0, 100):
+   print(i)
+```
+
+Loop will work between the range defined by the range function. `range(a, b)` will be between a and b, including a but **not including b** [a, b)
+
+By default the next iteration using a range function will increase by 1. If you want any other number, you can pass an extra parameter to the function `for i in range(0, 11, 2)` will print 0 2 4 6 8 10
+
+## [String concatenation](https://www.digitalocean.com/community/tutorials/python-string-concatenation)
+
+1. Using + operator
+2. using `join()` method
+3. using %
+4. using `format()`
+5. Uisng [f strings](#f-strings)

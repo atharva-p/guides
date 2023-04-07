@@ -136,6 +136,30 @@ print(charList)
 
 This will output `[['a', 't', 'h', 'a', 'r', 'v', 'a'], ['a', 's', 'h', 'i', 's', 'h'], ['p', 'a', 't', 'i', 'l']]`
 
+### Strings are immutable
+
+If it is not possible to alter the value of an object over time, it is known as immutable. Strings are immutable so the following code will work in C but not in python
+
+```
+# will not work!!
+name = "atharva"
+# swaping t for r
+temp = name[1]
+name[1] = name[4]
+name[4] = temp
+```
+
+A work around for this is to [convert the string into a list of characters](#converting-strings-to-lists), manipulate the list and then concatenate the list as needed into a string using the [`join()`](#string-concatenation) method
+
+```
+name = "atharva"
+nameAsAList = list(atharva)
+
+# swap the characters inside the list
+
+newString = "".join(nameAsAList)
+```
+
 ## [Terminating a program](https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/)
 
 Use the `sys.exit()` function from the `sys` module to exit a program.

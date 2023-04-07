@@ -76,6 +76,10 @@ Import the random module first
 
 `uniform(a, b)` generates a floating point number between a and b (both inclusive)
 
+`choice(iterable)` will return a randomly chosen element from any iterable that is passed to it
+
+`shuffle(iterable)` will shuffle the original iterable passed to it
+
 ## [Lists](https://www.w3schools.com/python/python_ref_list.asp)
 
 Negative indices can also be used to access list data. A negative index will start counting from the end of the list.

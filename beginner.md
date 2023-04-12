@@ -222,6 +222,12 @@ By default the next iteration using a range function will increase by 1. If you 
 4. using `format()`
 5. Uisng [f strings](#f-strings)
 
-_TODO add enumerate and add membership operators_
-
 _TODO add about from file import something_
+
+## Functions
+
+### Parameters vs Arguments
+
+**Parameters** - `def greet(name):` in this the name variable is the parameter. The variables that are defined when the function is declared are known as a parameter.
+
+**Arguments** - `greet("atharva")` in this the string "atharva" passed to the function is known as the argument. The values that are declared within a function when the function is called are known as an argument.

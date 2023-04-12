@@ -164,6 +164,30 @@ nameAsAList = list(atharva)
 newString = "".join(nameAsAList)
 ```
 
+### The enumerate function
+
+the `enumerate(iterable, optional-starting-number)` function adds counter to an iterable and returns it as an enumerate object which can then be converted into a list or tuple.
+
+#### Enumerate function in for loops
+
+```
+testList = ["apple", "microsoft", "google", "lenovo", "bing", "tesla"]
+for index, item in enumerate(testList):
+    print(f"{index} {item}")
+
+# this will output
+0 apple
+1 microsoft
+2 google
+3 lenovo
+4 bing
+5 tesla
+```
+
+#### Converting enumerate object into a list
+
+An enumerated object converted into a list can be used as a normal 2D list. It creates a matrix[x][y] with x representing the counter column assigned by enumerate and y the column with the actual iterable values.
+
 ## [Terminating a program](https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/)
 
 Use the `sys.exit()` function from the `sys` module to exit a program.

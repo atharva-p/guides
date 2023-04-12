@@ -194,6 +194,13 @@ Use the `sys.exit()` function from the `sys` module to exit a program.
 
 It takes an optional argument, either an integer or a string. 0 integer indicates successful program termination.
 
+### Membership operators
+
+Used to test whether an item is present in an object.
+
+`in` - will return true if the item is found in object
+`not in` - will return true if the item is not found in object
+
 ## Loops
 
 ### For loop with a range function

@@ -42,7 +42,10 @@ The additional 2 will round 8 / 3 to two places afer the decimal
 
 _TODO insert link here after finishing rounding properly_
 
-**Floor division** Use double lashes to do a floor division. The float is automatically rounded off to an integer and returns an integer data type `print(8 // 3)` will print 2
+**Floor division** Use double dashes to do a floor division. The float is automatically rounded off to an integer and returns an integer data type `print(8 // 3)` will print 2. **Floor** means to return smallest integer lower or equal to x.
+
+**Rounding a number up**
+Use the `math.ceil()` function to round a number to an integer higher or equal to x. To **ceil** is to return an integer that is equal or higher than x.
 
 ## F strings
 
@@ -231,3 +234,11 @@ _TODO add about from file import something_
 **Parameters** - `def greet(name):` in this the name variable is the parameter. The variables that are defined when the function is declared are known as a parameter.
 
 **Arguments** - `greet("atharva")` in this the string "atharva" passed to the function is known as the argument. The values that are declared within a function when the function is called are known as an argument.
+
+### Keyword Arguments
+
+You can add arguments with their respective parameters during a function call. For example, if we have a function `def testfun(a, b, c)` we can pass arguments to specific parameters `testfun(b = 10, a = 1, c = 30)`
+
+### Returning ASCII value of a unicode character
+
+Use the `ord()` function.

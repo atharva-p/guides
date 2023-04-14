@@ -118,7 +118,9 @@ print(testList)
 
 ### [Converting strings to lists](https://www.askpython.com/python/string/convert-string-to-list-in-python)
 
-1. String to a list of strings - Use the `split()` or `rsplit()` functions. These functions will split a string at the specified separator and returns a **list of substrings**
+1. String to a list of strings - Use the `split()` or `rsplit()` functions. These functions will split a string at the specified separator and returns a **list of substrings**.
+
+The default separator for `split()` is any whitespace.
 
 2. String to a list of characters
 
@@ -221,6 +223,9 @@ By default the next iteration using a range function will increase by 1. If you 
 
 1. Using + operator
 2. using `join()` method
+
+   `join()` method takes all items in an iterable and joins them into a string
+
 3. using %
 4. using `format()`
 5. Uisng [f strings](#f-strings)
@@ -239,8 +244,8 @@ _TODO add about from file import something_
 
 You can add arguments with their respective parameters during a function call. For example, if we have a function `def testfun(a, b, c)` we can pass arguments to specific parameters `testfun(b = 10, a = 1, c = 30)`
 
-### Returning ASCII value of a unicode character and vice versa
+### Returning Unicode value of a unicode character and vice versa
 
-Use the `ord()` function to convert unicode to ASCII
+Use the `ord()` function to convert character to unicode
 
-Use the `chr()` function to convert ASCII to unicode
+Use the `chr()` function to convert unicode to character

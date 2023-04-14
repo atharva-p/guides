@@ -239,6 +239,8 @@ _TODO add about from file import something_
 
 You can add arguments with their respective parameters during a function call. For example, if we have a function `def testfun(a, b, c)` we can pass arguments to specific parameters `testfun(b = 10, a = 1, c = 30)`
 
-### Returning ASCII value of a unicode character
+### Returning ASCII value of a unicode character and vice versa
 
-Use the `ord()` function.
+Use the `ord()` function to convert unicode to ASCII
+
+Use the `chr()` function to convert ASCII to unicode

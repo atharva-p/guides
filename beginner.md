@@ -266,3 +266,17 @@ print(triple(5)) # Output: 15
 ```
 
 Here, we define a function `multiply_by` that takes an argument `factor` and returns a lambda function that multiplies its input by `factor`. We then use this function to create two new functions `double` and `triple` that multiply their input by 2 and 3 respectively.
+
+## Dictionaries
+
+Used to store key value pairs. Use the `dictionary_name = {key1:pair, key2:pair}` syntax to create a dictionary. Passing a key to a dictionary will return the result
+
+### Operations on a dictionary
+
+```python
+# Adding or modifying a key's value in a dictionary
+dictonary_name[key] = "another value"
+# looping through a dictionary and printing values
+for key in dictionary_name:
+   print(dictionary_name[key])
+```

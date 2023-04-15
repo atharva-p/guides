@@ -6,7 +6,7 @@ You can import any python file that you write in the project folder as a module 
 
 Use the `input(prompt)` function to take input. It will display prompt and wait for input, afer which the input function will be replaced by what is inputted
 
-```
+```python
 print("hello there " + input("enter your name")) // will wait for input and print hey there input
 ```
 
@@ -16,7 +16,7 @@ print("hello there " + input("enter your name")) // will wait for input and prin
 
 If numbers are to be inputted into a list (eg "1 3 3 5 6") use the following method
 
-```
+```python
 # will create a list with the inputted string of numbers
 numbers = list(map(int, inputString.split()))
 ```
@@ -33,9 +33,9 @@ You check the type of an object/data using `type` function. example, `print(type
 
 ### Rounding numbers
 
-```
-print(round(8 / 3))   // answer 3
-print(round(8 / 3, 2))    // answer 2.67
+```python
+print(round(8 / 3))   # answer 3
+print(round(8 / 3, 2))    # answer 2.67
 ```
 
 The additional 2 will round 8 / 3 to two places afer the decimal
@@ -51,17 +51,11 @@ Use the `math.ceil()` function to round a number to an integer higher or equal t
 
 Automatically converts data into string and concatenates with the rest of the string. Needs an f before the string
 
-```
-score = 0
-isWinnning = True
-print(f"your score is {score} and you winning boolean is {isWinnign}")
-```
-
 ## Lower() and count()
 
 `lower()` function will make a string lowercase. The `count()` function will return the count of the string or substring passed to it from a list.
 
-```
+```python
 name = "Atharva"
 lower = name.lower() // will become "atharva"
 count = name.count("a") // will return 3
@@ -87,13 +81,15 @@ Import the random module first
 
 Negative indices can also be used to access list data. A negative index will start counting from the end of the list.
 
+The `index(item)` method for a list will return the first position of `item` from the given index
+
 `append(item)` will add to the end of the list. Function takes only one item to be added as the argument. If an iterable is passed it will be instead added entirely to the list (unlike extend).
 
 `extend(iterable)` will add all the elements of the iterable to the end of the current list.
 
 **Difference between append and extend** - append adds only the element passed to it to the end of the list whereas extend will cycle through the iterable and add all of it's elements to the end of the list
 
-```
+```python
 testList = ["google", "amazon"]
 print(testList)
 # output ['google', 'amazon']
@@ -126,7 +122,7 @@ The default separator for `split()` is any whitespace.
 
    You can use the `list()` function to return a list from any iterable. It is actually a constructor of the list class
 
-   ```
+   ```python
    name = "atharva"
    testList = list(name)
    print(testlist)
@@ -136,7 +132,7 @@ The default separator for `split()` is any whitespace.
 
 3. List of strings to a list of character strings
 
-```
+```python
 testList = ["atharva", "ashish", "patil"]
 # convert to a list of character strings
 charList = list(map(list, testList))
@@ -149,7 +145,7 @@ This will output `[['a', 't', 'h', 'a', 'r', 'v', 'a'], ['a', 's', 'h', 'i', 's'
 
 If it is not possible to alter the value of an object over time, it is known as immutable. Strings are immutable so the following code will work in C but not in python
 
-```
+```python
 # will not work!!
 name = "atharva"
 # swaping t for r
@@ -160,7 +156,7 @@ name[4] = temp
 
 A work around for this is to [convert the string into a list of characters](#converting-strings-to-lists), manipulate the list and then concatenate the list as needed into a string using the [`join()`](#string-concatenation) method
 
-```
+```python
 name = "atharva"
 nameAsAList = list(atharva)
 
@@ -175,7 +171,7 @@ the `enumerate(iterable, optional-starting-number)` function adds counter to an 
 
 #### Enumerate function in for loops
 
-```
+```python
 testList = ["apple", "microsoft", "google", "lenovo", "bing", "tesla"]
 for index, item in enumerate(testList):
     print(f"{index} {item}")
@@ -210,7 +206,7 @@ Used to test whether an item is present in an object.
 
 ### For loop with a range function
 
-```
+```python
 for i in range(0, 100):
    print(i)
 ```
@@ -249,3 +245,24 @@ You can add arguments with their respective parameters during a function call. F
 Use the `ord()` function to convert character to unicode
 
 Use the `chr()` function to convert unicode to character
+
+### Lambda functions
+
+Lambda functions are used to create small, one-time-use functions that don't need a name. They are often used as arguments to higher-order functions that take other functions as inputs. They can also be used to write more concise code.
+
+The main difference between lambda and def is that lambda is an expression, not a statement. This means that it can appear in places where def cannot, such as inside a list comprehension or an argument list.
+
+Lambda functions are also useful when you want to create a function that takes an argument and returns a function. For example, if you want to create a function that returns a function that multiplies its input by a certain factor, you could use a lambda function like this:
+
+```python
+def multiply_by(factor):
+    return lambda x: x * factor
+
+double = multiply_by(2)
+triple = multiply_by(3)
+
+print(double(5)) # Output: 10
+print(triple(5)) # Output: 15
+```
+
+Here, we define a function `multiply_by` that takes an argument `factor` and returns a lambda function that multiplies its input by `factor`. We then use this function to create two new functions `double` and `triple` that multiply their input by 2 and 3 respectively.

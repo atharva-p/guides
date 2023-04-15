@@ -7,7 +7,7 @@ You can import any python file that you write in the project folder as a module 
 Use the `input(prompt)` function to take input. It will display prompt and wait for input, afer which the input function will be replaced by what is inputted
 
 ```python
-print("hello there " + input("enter your name")) // will wait for input and print hey there input
+print("hello there " + input("enter your name")) # will wait for input and print hey there input
 ```
 
 **Printing multiple lines of string** To create strings that span multiple lines, triple single quotes ''' or triple double quotes """ are used to enclose the string.

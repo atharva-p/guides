@@ -57,8 +57,8 @@ Automatically converts data into string and concatenates with the rest of the st
 
 ```python
 name = "Atharva"
-lower = name.lower() // will become "atharva"
-count = name.count("a") // will return 3
+lower = name.lower() # will become "atharva"
+count = name.count("a") # will return 3
 ```
 
 `lower()` is part of [python string methods](https://www.w3schools.com/python/python_ref_string.asp) and `count()` is a part of python list methods

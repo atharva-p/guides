@@ -269,7 +269,7 @@ Here, we define a function `multiply_by` that takes an argument `factor` and ret
 
 ## Dictionaries
 
-Used to store key value pairs. Use the `dictionary_name = {key1:pair, key2:pair}` syntax to create a dictionary. Passing a key to a dictionary will return the result
+Used to store key value pairs. Passing a value to the dictionary will return the value associated with that key
 
 ### Operations on a dictionary
 

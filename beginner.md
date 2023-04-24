@@ -269,7 +269,14 @@ Here, we define a function `multiply_by` that takes an argument `factor` and ret
 
 ## Dictionaries
 
-Used to store key value pairs. Passing a value to the dictionary will return the value associated with that key
+```python
+test_dict = {
+   "key": "value",
+   "anotherKey": "anotherValue",
+}
+```
+
+Used to store key value pairs. Passing a key to the dictionary will return the value associated with that key
 
 ### Operations on a dictionary
 
@@ -280,3 +287,21 @@ dictonary_name[key] = "another value"
 for key in dictionary_name:
    print(dictionary_name[key])
 ```
+
+### Nesting lists and dictionaries inside a dictionary
+
+Both lists and dictionaries can be listed. Following code nests dictionaries inside the root dictionary `travel_log` to describe attributes of the countries (like cities_visited, food_eaten, etc). Lists are also nested inside the attribute dictionaries to denote multiple items associated with that attribute.
+
+```python
+travel_log = {
+   "France": { # attribute dictionary with nested lists as the values of the keys
+      "cities_visited": ["Paris", "Dijon"],
+      "food_eaten": ["croissant", "Ratatoullie"]
+   }
+   "Germany": {
+      "cities_visited": ["Berlin"]
+   },
+}
+```
+
+You could also nest multiple dictonaries inside a list and access them according to the list index numbers

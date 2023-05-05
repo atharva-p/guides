@@ -278,6 +278,8 @@ test_dict = {
 
 Used to store key value pairs. Passing a key to the dictionary will return the value associated with that key
 
+Dictionary keys can also have function names as their values
+
 ### Operations on a dictionary
 
 ```python
@@ -290,14 +292,14 @@ for key in dictionary_name:
 
 ### Nesting lists and dictionaries inside a dictionary
 
-Both lists and dictionaries can be listed. Following code nests dictionaries inside the root dictionary `travel_log` to describe attributes of the countries (like cities_visited, food_eaten, etc). Lists are also nested inside the attribute dictionaries to denote multiple items associated with that attribute.
+Both lists and dictionaries can be listed. Following code nests dictionaries with the country name inside the root dictionary `travel_log` to describe attributes of countries (like cities_visited, food_eaten, etc). Lists are also nested inside the country dictionaries to denote multiple items associated with that attribute.
 
 ```python
 travel_log = {
    "France": { # attribute dictionary with nested lists as the values of the keys
       "cities_visited": ["Paris", "Dijon"],
       "food_eaten": ["croissant", "Ratatoullie"]
-   }
+   },
    "Germany": {
       "cities_visited": ["Berlin"]
    },
@@ -305,3 +307,13 @@ travel_log = {
 ```
 
 You could also nest multiple dictonaries inside a list and access them according to the list index numbers
+
+## Docstrings
+
+Give your functions a description that IDEs and other programming tools can also read and show during function call
+
+```python
+def test_function():
+   """ This is the function description """
+   return None
+```

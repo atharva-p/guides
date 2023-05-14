@@ -85,6 +85,8 @@ The `index(item)` method for a list will return the first position of `item` fro
 
 `append(item)` will add to the end of the list. Function takes only one item to be added as the argument. If an iterable is passed it will be instead added entirely to the list (unlike extend).
 
+**Warning:** - The `append()` returns `None` after running so do not assign `append()` to a variable
+
 `extend(iterable)` will add all the elements of the iterable to the end of the current list.
 
 **Difference between append and extend** - append adds only the element passed to it to the end of the list whereas extend will cycle through the iterable and add all of it's elements to the end of the list

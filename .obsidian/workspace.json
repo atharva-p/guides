@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "acc253bae3e7ac41",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scribble.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "beginner.md",
+                "file": "Scribble.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "beginner.md",
+                "file": "Scribble.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "beginner.md"
+                "file": "Scribble.md"
               }
             }
           }
@@ -146,10 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca9064a5449bc0d6",
+  "active": "acc253bae3e7ac41",
   "lastOpenFiles": [
-    "Scribble.md",
     "beginner.md",
+    "Scribble.md",
+    "Scribble.md",
     "google.com.md",
     "pythonSyntaxCheatSheet.pdf",
     "12Rules to learn to code.pdf"

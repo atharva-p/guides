@@ -1,10 +1,2 @@
-Test file
-```python 
-print("hello")
-```
+Blackjack v3 
 
-https://obsidian.md/
-
-that was a link 
-
-[this is a link](https://obsidian.md/) 

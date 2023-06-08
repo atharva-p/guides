@@ -140,7 +140,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.5
+    "width": 277.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -152,12 +153,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eaa2df9f9c1a5105",
+  "active": "0d69e773785b7a46",
   "lastOpenFiles": [
-    "beginner.md",
-    "Scribble.md",
-    "google.com.md",
+    "12Rules to learn to code.pdf",
+    "README.md",
     "pythonSyntaxCheatSheet.pdf",
-    "12Rules to learn to code.pdf"
+    "Scribble.md",
+    "beginner.md",
+    "google.com.md"
   ]
 }

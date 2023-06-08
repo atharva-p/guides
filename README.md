@@ -8,7 +8,5 @@ _If you find any errors or if you would like to make improvements or add to this
 
 | Reference                                                              | Description                                                            |
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| **[Git](./gitref.md)**                                                 | Basic commands with brief descriptions on how to use them.             |
-| **[Python](./python.md)**                                              | Python notes for the 100daysOfCode udemy python course                 |
-| **[PythonCheatSheet](./pythonSyntaxCheatSheet.pdf)**                   | A python syntax cheat sheet from the 100daysOfCode python udemy course |
-| **[RulesToLearningHowToCode](./12Rules%20to%20learn%20to%20code.pdf)** | rules to learn to code from the python udemy course                    |
+| **[Python udemy course beginner level](./beginner.md)**                                     | Python notes for the 100daysOfCode udemy python course                 |
+| [Scribble](./scribble.md) | Scribble for noting down thoughts |

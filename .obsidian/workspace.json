@@ -134,14 +134,23 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "a37d66b3aad0c27e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "beginner.md"
+              }
+            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 277.5,
-    "collapsed": true
+    "width": 277.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -155,11 +164,11 @@
   },
   "active": "0d69e773785b7a46",
   "lastOpenFiles": [
-    "12Rules to learn to code.pdf",
-    "README.md",
-    "pythonSyntaxCheatSheet.pdf",
     "Scribble.md",
+    "README.md",
     "beginner.md",
+    "pythonSyntaxCheatSheet.pdf",
+    "12Rules to learn to code.pdf",
     "google.com.md"
   ]
 }

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f959dce04fdacdac",
+        "id": "a1b4d960a0917b99",
         "type": "tabs",
         "children": [
           {
-            "id": "ca9064a5449bc0d6",
+            "id": "0d69e773785b7a46",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "acc253bae3e7ac41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Scribble.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Scribble.md",
+                "file": "beginner.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Scribble.md",
+                "file": "beginner.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,21 +120,27 @@
             }
           },
           {
-            "id": "3f915e03ed4ed77e",
+            "id": "88c3b2bb418378bf",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "file": "Scribble.md"
-              }
+              "type": "git-history-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "eaa2df9f9c1a5105",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 277.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,10 +152,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "acc253bae3e7ac41",
+  "active": "eaa2df9f9c1a5105",
   "lastOpenFiles": [
     "beginner.md",
-    "Scribble.md",
     "Scribble.md",
     "google.com.md",
     "pythonSyntaxCheatSheet.pdf",

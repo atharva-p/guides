@@ -1,3 +1,2 @@
-### Dealer's play 
-1. keep taking till score is 17 or higher
-2. check_score and then pass it to process_score everytime
+### aces 
+if score > 21, see the hand for any key that is an ace (14) and note their positions in a separate list which will hold the ace positions 

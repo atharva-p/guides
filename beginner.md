@@ -232,7 +232,7 @@ By default the next iteration using a range function will increase by 1. If you 
 
 3. using %
 4. using `format()`
-5. Uisng [f strings](#f-strings)
+5. Using [f strings](#f-strings)
 
 _TODO add about from file import something_
 

@@ -4,6 +4,10 @@ You can import any python file that you write in the project folder as a module 
 
 There is no block scope in python. Only functions have local scopes. if-else, loops don't create local scopes. 
 
+## Script vs module vs package vs library
+
+
+
 ## Taking input
 
 Use the `input(prompt)` function to take input. It will display prompt and wait for input, afer which the input function will be replaced by what is inputted

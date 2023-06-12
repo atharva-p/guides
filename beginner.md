@@ -238,6 +238,17 @@ _TODO add about from file import something_
 
 ## Functions
 
+### Scope and the `global` keyword 
+
+In order to modify variables of the global scope through a local function, a variable needs to be explicitly defined as global inside the local function's scope. 
+
+```python
+varible_global = 1 
+def local_function(): 
+	global variable_global
+	variable_global += 1
+```
+
 ### Parameters vs Arguments
 
 **Parameters** - `def greet(name):` in this the name variable is the parameter. The variables that are defined when the function is declared are known as a parameter.

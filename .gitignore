@@ -1,0 +1,2 @@
+# will ignore obsidian config files from commiting 
+.obsidian**

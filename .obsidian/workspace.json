@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -162,7 +162,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eaa2df9f9c1a5105",
+  "active": "a37d66b3aad0c27e",
   "lastOpenFiles": [
     "gitref.md",
     "beginner.md",

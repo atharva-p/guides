@@ -240,7 +240,7 @@ _TODO add about from file import something_
 
 ### Scope and the `global` keyword 
 
-In order to modify variables of the global scope through a local function, a variable needs to be explicitly defined as global inside the local function's scope. Modifying into the global scope often is considered a bad practice.
+In order to modify variables of the global scope through a local function, a variable needs to be explicitly defined as global inside the local function's scope. Modifying into the global scope often is considered a bad practice. 
 
 ```python
 varible_global = 1 

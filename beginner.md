@@ -6,7 +6,13 @@ There is no block scope in python. Only functions have local scopes. if-else, lo
 
 ## Script vs module vs package vs library
 
+Script - A **script** is a Python file that’s intended to be run directly. When you run it, it should do _something_. This means that scripts will often contain code written outside the scope of any classes or functions
 
+Module - A **module** is a Python file that’s intended to be imported into scripts or other modules. It often defines members like classes, functions, and variables intended to be used in other files that import it.
+
+Library - A **library** is a set of modules which makes sense to be together and that can be used in a program or another library
+
+Package - A **package** is a unit of distribution that can contain a library or an executable or both. It's a way to share your code with the community.
 
 ## Taking input
 
@@ -55,7 +61,9 @@ Use the `math.ceil()` function to round a number to an integer higher or equal t
 
 ## F strings
 
-Automatically converts data into string and concatenates with the rest of the string. Needs an f before the string
+Automatically converts data into string and concatenates with the rest of the string. Needs an f before the string. 
+
+F strings can also be used without a `print()` function. You can also return a f string. 
 
 ## Lower() and count()
 
@@ -242,11 +250,13 @@ _TODO add about from file import something_
 
 In order to modify variables of the global scope through a local function, a variable needs to be explicitly defined as global inside the local function's scope. Modifying into the global scope often is considered a bad practice. 
 
+**Remember**, the `global` keyword is NOT required if global variables are ONLY being accessed inside a local scope
+
 ```python
 varible_global = 1 
 def local_function(): 
 	global variable_global
-	variable_global += 1
+	variable_global += 1      # will change the value of global variable_global to 2 when this function is called 
 ```
 
 ### Parameters vs Arguments

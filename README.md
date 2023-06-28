@@ -8,5 +8,5 @@ _If you find any errors or if you would like to make improvements or add to this
 
 | Reference                                                              | Description                                                            |
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| **[Python udemy course beginner level](./beginner.md)**                                     | Python notes for the 100daysOfCode udemy python course                 |
+| **[Python udemy course intermediate level](./Intermediate.md)**                                     | Python notes for the 100daysOfCode udemy python course                 |
 | [Scribble](./scribble.md) | Scribble for noting down thoughts |

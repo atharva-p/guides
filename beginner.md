@@ -185,7 +185,7 @@ for index, item in enumerate(testList):
 
 #### Converting enumerate object into a list
 
-An enumerated object converted into a list can be used as a normal 2D list. It creates a matrix[x][y] with x representing the counter column assigned by enumerate and y the column with the actual iterable values.
+An enumerated object converted into a list can be used as a normal 2D list. It creates a matrix\[x]\[y] with x representing the counter column assigned by enumerate and y the column with the actual iterable values.
 
 ## [Terminating a program](https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/)
 
@@ -203,11 +203,6 @@ Used to test whether an item is present in an object.
 ## Loops
 
 ### For loop with a range function
-
-```python
-for i in range(0, 100):
-   print(i)
-```
 
 Loop will work between the range defined by the range function. `range(a, b)` will be between a and b, including a but **not including b** [a, b)
 
@@ -232,7 +227,7 @@ _TODO add about from file import something_
 
 In order to modify variables of the global scope through a local function, a variable needs to be explicitly defined as global inside the local function's scope. Modifying into the global scope often is considered a bad practice. 
 
-**Remember**, the `global` keyword is NOT required if global variables are ONLY being accessed inside a local scope
+**Remember**, the `global` keyword is NOT required if global variables are ONLY BEING ACCESSED inside a local scope
 
 ```python
 varible_global = 1 
@@ -258,6 +253,8 @@ Use the `ord()` function to convert character to unicode
 Use the `chr()` function to convert unicode to character
 
 ### Lambda functions
+
+TODO add syntax
 
 Lambda functions are used to create small, one-time-use functions that don't need a name. They are often used as arguments to higher-order functions that take other functions as inputs. They can also be used to write more concise code.
 

@@ -1,6 +1,6 @@
 # Beginner level - [Python udemy course](https://www.udemy.com/course/100-days-of-code/)
 
-You can import any python file that you write in the project folder as a module using `import file-name or module-name`
+Essential important notes
 
 There is no block scope in python. Only functions have local scopes. if-else, loops don't create local scopes. 
 
@@ -16,13 +16,9 @@ Package - A **package** is a unit of distribution that can contain a library o
 
 ## Taking input
 
-Use the `input(prompt)` function to take input. It will display prompt and wait for input, afer which the input function will be replaced by what is inputted
-
 ```python
 print("hello there " + input("enter your name")) # will wait for input and print hey there input
 ```
-
-**Printing multiple lines of string** To create strings that span multiple lines, triple single quotes ''' or triple double quotes """ are used to enclose the string.
 
 ### Taking multiple numbers as input
 
@@ -33,15 +29,9 @@ If numbers are to be inputted into a list (eg "1 3 3 5 6") use the following met
 numbers = list(map(int, inputString.split()))
 ```
 
-## Type conversions
-
-Convert to a string using the `str()` function. Similarly use `int()` or `float()` to convert.
-
-You check the type of an object/data using `type` function. example, `print(type(entityName))`
-
 ## Mathematical operations
 
-**Exponents** use `**` to denote a number as an exponent. For example, `print(2**3)` would print 2^3 that is 8
+Use `**` to denote a number as an exponent. For example, `print(2**3)` would print 2^3 that is 8
 
 ### Rounding numbers
 
@@ -50,20 +40,14 @@ print(round(8 / 3))   # answer 3
 print(round(8 / 3, 2))    # answer 2.67
 ```
 
-The additional 2 will round 8 / 3 to two places afer the decimal
+The additional 2 will round 8 / 3 to two places after the decimal
 
-_TODO insert link here after finishing rounding properly_
+[Real python rounding numbers](https://realpython.com/python-rounding/)
 
 **Floor division** Use double dashes to do a floor division. The float is automatically rounded off to an integer and returns an integer data type `print(8 // 3)` will print 2. **Floor** means to return smallest integer lower or equal to x.
 
 **Rounding a number up**
 Use the `math.ceil()` function to round a number to an integer higher or equal to x. To **ceil** is to return an integer that is equal or higher than x.
-
-## F strings
-
-Automatically converts data into string and concatenates with the rest of the string. Needs an f before the string. 
-
-F strings can also be used without a `print()` function. You can also return a f string. 
 
 ## Lower() and count()
 
@@ -79,17 +63,15 @@ count = name.count("a") # will return 3
 
 ## [Randomization](https://www.w3schools.com/python/module_random.asp)
 
-Import the random module first
+`randint(a, b)` - generates a random number between a and b (both inclusive)
 
-`randint(a, b)` generates a random number between a and b (both inclusive)
+`random()` - generates a floating point number between [0, 1), 1 not being inclusive. Function takes no arguments
 
-`random()` generates a floating point number between [0, 1), 1 not being inclusive. Function takes no arguments
+`uniform(a, b)` - generates a floating point number between a and b (both inclusive)
 
-`uniform(a, b)` generates a floating point number between a and b (both inclusive)
+`choice(iterable)` - will return a randomly chosen element from any iterable that is passed to it
 
-`choice(iterable)` will return a randomly chosen element from any iterable that is passed to it
-
-`shuffle(iterable)` will shuffle the original iterable passed to it
+`shuffle(iterable)` - will shuffle the original iterable passed to it. This method changes the original list, it does not return a new list.
 
 ## [Lists](https://www.w3schools.com/python/python_ref_list.asp)
 

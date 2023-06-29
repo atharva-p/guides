@@ -3,7 +3,7 @@
 
 ## Using `python -m` while running commands in venv
 
-Always prepend your command with `python -m`, not doing will execute the command using the global python interpreter,  which will make the virtual environment pointless 
+Always prepend your command with `python -m`, not doing so will execute the command using the global python interpreter, which will make the virtual environment pointless 
 
 ## What do you mean by "executing a module as a script"?
 
@@ -47,7 +47,7 @@ These objects created using custom data structures (classes) are mutable by defa
 
 You can change the default behavior of `print(class_object)` by defining an `__str__(self)` special instance method. This method should return a string of your choice
 
-Methods will start and end with double underscores are called **dunder methods** 
+Methods that start and end with double underscores are called **dunder methods** 
 
 ## Inheritance
 

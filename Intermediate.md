@@ -43,6 +43,10 @@ Class attributes - On the other hand, [class attributes](https://realpython.com
 
 These objects created using custom data structures (classes) are mutable by default
 
+### `self` in class methods
+
+When you instantiate an object, Python creates a new instance and passes it to the first parameter of `.__init__()`, which is the `self` parameter (this first parameter can be named anything, but convention is to name it self). This essentially removes the `self` parameter, so you only need to worry about the parameters that follow `self`. 
+
 ## `__str__()` instance method
 
 You can change the default behavior of `print(class_object)` by defining an `__str__(self)` special instance method. This method should return a string of your choice
@@ -100,3 +104,8 @@ Goldie says, and sometimes also barks BULL, from parent
 Goldie says, and sometimes also barks grrrr, from parent
 ```
 
+## Class attributes vs instance attributes
+
+Class attributes - Attributes that may be shared across objects are called class attributes. These are declared outside `__init__()` and do not use the `self` tag
+
+Instance attributes - Attributes that will be unique to each object of the class are instance attributes. These are declared inside the `__init__()` function and use the `self` tag

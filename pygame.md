@@ -66,8 +66,11 @@ There are two steps in inserting text into the game
 
 Rectangles allow you to place at positions much precisely compared to positioning with surfaces. Rectangles also provide basic collision detection 
 
-1. create a surface for image formation 
-2. place that image via a rectangle 
 
 ![[Pasted image 20230705152859.png]]
+
+1. create a surface with the imported image 
+2. get a rectangle from that surface, you can also pass positional keyword arguments  `test_rect = test_surface.get_rect(bottomleft=(0, 300))`
+3. you can change the position of the rect by accessing the rect attributes `test_rect.left += 10`
+4. blit the rectangle in the main loop `screen.blit(test_surface, test_rect)`  
 

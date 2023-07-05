@@ -47,3 +47,27 @@ This is done using the `Surface.blit()` function
 `source` denotes the display that will be bound to the display from which this function is being called (for example, `screen.blit(test_surface, (w, h))` will bind `test_surface` to main display)
 
 `dest` can be a tuple(width, height) representing the position of the upper left corner of the `source` surface that will be bound. 
+
+## converting surfaces for fast blitting
+
+surfaces are recommended to be converted to optimize the blitting performance 
+
+`Surface.convert()` - this will convert the surface to the most optimized pixel format for blitting. this method will remove any alpha values from the original image (opacity values). 
+
+`Surface.convert_alpha()` - same function as the above method but preserves alpha values of the images. 
+
+# Text 
+
+There are two steps in inserting text into the game 
+1. create a font object using `font.Font(file_path, size)`, use `None` instead of the path to use the default pygame font 
+2. render the font object using `font.render(text, anti_alias, color)`
+
+# Rectangles 
+
+Rectangles allow you to place at positions much precisely compared to positioning with surfaces. Rectangles also provide basic collision detection 
+
+1. create a surface for image formation 
+2. place that image via a rectangle 
+
+![[Pasted image 20230705152859.png]]
+

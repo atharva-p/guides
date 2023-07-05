@@ -30,6 +30,8 @@ while True:
 6. `pygame.display.update()` updates the screen 
 7. `clock.tick(60)` will limit the framerate to 60 fps (which means it will stop the `while True:` from running more than 60 times a second). Also returns time in milliseconds that has passed since the last frame. 
 
+Updating the display and the clock tick should happen at the end (my theory) 
+
 # Surface
 
 pygame object for representing images 
@@ -74,3 +76,9 @@ Rectangles allow you to place at positions much precisely compared to positionin
 3. you can change the position of the rect by accessing the rect attributes `test_rect.left += 10`
 4. blit the rectangle in the main loop `screen.blit(test_surface, test_rect)`  
 
+# detecting key presses 
+
+there are two methods 
+
+1. using `key.get_pressed()` this will return an object containing bool values of all keys. Pass the key constant to get the bool for the desired key (for example `keys_pressed[pygame.K_SPACE]`). Note that this method will generate bool values for the duration of the key press. Not ideal if you only want one bool per key stroke
+2. using the event loop. check if `event.type == pygame.KEYDOWN`  or keyup. To check for a specific key, check for `if event.key == pygame.K_SPACE` 

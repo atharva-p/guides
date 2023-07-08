@@ -12,11 +12,19 @@ my solution
 3. move it to the left, snails should move slower than flys, flys should be faster 
 4. delete the blitted rect from the screen when it goes outside the screen (just don't draw it again)
 
-solution 2 
-1. create rects from surfaces of snail and fly and store in separate lists 
+new solution 
+1. create rects from surfaces of snail and fly and store in separate lists
 2. blit them separately in 80-20 prob 
 3. control speed separately 
 4. delete rects when they go outside screen 
+
+another solution
+1. create two functions, `generate_snail()` and `generate_fly()`
+2. call them with an 80-20 probability using `random.choices()` 
+3. each of these functions will create a rectangle, append that to the rect list NOPE (and then blits them to the main screen), also return the rect list again
+4. move each of these separately and blit during that
+5. delete each of the rects from both lists when they go outside the screen 
+6. write code for collision
 
 code used to make snail move 
 

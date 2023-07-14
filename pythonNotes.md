@@ -161,7 +161,7 @@ nameAsAList = list(atharva)
 newString = "".join(nameAsAList)
 ```
 
-### The enumerate function
+### Enumerate function
 
 the `enumerate(iterable, optional-starting-number)` function adds counter to an iterable and returns it as an enumerate object which can then be converted into a list or tuple.
 

@@ -243,10 +243,17 @@ For creating a new branch
 git branch branchName
 ```
 
-For deleting an existing branch, use `--delete` tag or the `-d` shorthand
+For deleting an existing branch (locally), use `--delete` tag or the `-d` shorthand
 
 ```
 git branch -d branchName
+```
+
+To delete that branch from remote, use 
+
+```
+git push origin -d branchName
+git fetch --prune
 ```
 
 For switching (or "checking out") branches

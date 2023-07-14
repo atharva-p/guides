@@ -195,7 +195,7 @@ It takes an optional argument, either an integer or a string. 0 integer indicate
 
 Used to test whether an item is present in an object.
 
-`in` - will return true if the item is found in object
+`in` - will return true if the item is found in object.
 `not in` - will return true if the item is not found in object
 
 ## Loops

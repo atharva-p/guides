@@ -1,41 +1,18 @@
-# obstacles
+- [x] get keyboard inputs 
+- [ ] create a dictionary with assets (head, body and tail in a list for straight, left, down and right) 
+- [ ] set up direction for the snake 
+- [ ] map the directions with the assets
+- [ ] move the snake
+- [ ] apples should not spawn in vectors that the snake holds (maybe inherit the snake class to fruit)
 
-video solution 
-1. make a obstacle rect list 
-2. add a new obstacle rect to the list when the obstacle event runs 
-3. for every rect in that list, move it to the left
-4. delete it from the list when it goes out of the screen 
 
-my solution 
-1. create a rect obstacle list 
-2. have `random.choice()` choose a rect (with more bias towards snails) on every OBSTACLE_EVENT and blit that to the screen, at a randomly chosen position 
-3. move it to the left, snails should move slower than flys, flys should be faster 
-4. delete the blitted rect from the screen when it goes outside the screen (just don't draw it again)
+## drawing the snake
+first rectangle should be the head 
+all of the middle ones should be the body part of the snake 
+last rectangle should be the tail 
 
-new solution 
-1. create rects from surfaces of snail and fly and store in separate lists
-2. blit them separately in 80-20 prob 
-3. control speed separately 
-4. delete rects when they go outside screen 
 
-another solution
-1. create two functions, `generate_snail()` and `generate_fly()`
-2. call them with an 80-20 probability using `random.choices()` 
-3. each of these functions will create a rectangle, append that to the rect list NOPE (and then blits them to the main screen), also return the rect list again
-4. move each of these separately and blit during that
-5. delete each of the rects from both lists when they go outside the screen 
-6. write code for collision
-
-code used to make snail move 
-
-```python
-# outside main loop 
-snail_rect = snail_surface.get_rect(bottomleft=(800, 300))
-
-# inside main loop 
-screen.blit(snail_surface, snail_rect)  
-  
-snail_rect.x -= 5  
-if snail_rect.right < 0:  
-snail_rect.left = 800
-```
+straight 
+down 
+left 
+right 

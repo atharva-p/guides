@@ -1,5 +1,5 @@
 - [x] get keyboard inputs 
-- [ ] create a dictionary with assets (head, body and tail in a list for straight, left, down and right) 
+- [ ] create a dictionary with assets (head, body and tail in a list for up, left, down and right) 
 - [ ] set up direction for the snake 
 - [ ] map the directions with the assets
 - [ ] move the snake

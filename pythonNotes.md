@@ -493,3 +493,19 @@ finally:
 
 `finally` will execute code regardless of exceptions or not. It is used for cleanup code that needs to run every time. [Why should i use finally and not put cleanup code outside the try-except-else block in the outer scope?](https://chat.openai.com/share/380149b9-4f6b-4c6d-8fac-00798a211a57)
 
+
+# Animate sprites (neat trick)
+
+```python
+index = (index + 1) % len(sprite_list)
+```
+
+Above code creates a looping effect, index resets to zero as it approaches the end of `sprite_list` 
+
+- Frame 1: `index = (0 + 1) % 5 = 1`. The sprite image at index 1 is displayed.
+- Frame 2: `index = (1 + 1) % 5 = 2`. The sprite image at index 2 is displayed.
+- Frame 3: `index = (2 + 1) % 5 = 3`. The sprite image at index 3 is displayed.
+- Frame 4: `index = (3 + 1) % 5 = 4`. The sprite image at index 4 is displayed.
+- Frame 5: `index = (4 + 1) % 5 = 0`. The sprite image at index 0 is displayed (looping back to the first image)
+
+

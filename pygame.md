@@ -82,3 +82,18 @@ there are two methods
 
 1. using `key.get_pressed()` this will return an object containing bool values of all keys. Pass the key constant to get the bool for the desired key (for example `keys_pressed[pygame.K_SPACE]`). Note that this method will generate bool values for the duration of the key press. Not ideal if you only want one bool per key stroke
 2. using the event loop. check if `event.type == pygame.KEYDOWN`  or keyup. To check for a specific key, check for `if event.key == pygame.K_SPACE` 
+
+# Animate sprites (neat trick)
+
+```python
+index = (index + 1) % len(sprite_list)
+```
+
+Above code creates a looping effect, index resets to zero as it approaches the end of `sprite_list` 
+
+- Frame 1: `index = (0 + 1) % 5 = 1`. The sprite image at index 1 is displayed.
+- Frame 2: `index = (1 + 1) % 5 = 2`. The sprite image at index 2 is displayed.
+- Frame 3: `index = (2 + 1) % 5 = 3`. The sprite image at index 3 is displayed.
+- Frame 4: `index = (3 + 1) % 5 = 4`. The sprite image at index 4 is displayed.
+- Frame 5: `index = (4 + 1) % 5 = 0`. The sprite image at index 0 is displayed (looping back to the first image)
+

@@ -508,4 +508,27 @@ Above code creates a looping effect, index resets to zero as it approaches the e
 - Frame 4: `index = (3 + 1) % 5 = 4`. The sprite image at index 4 is displayed.
 - Frame 5: `index = (4 + 1) % 5 = 0`. The sprite image at index 0 is displayed (looping back to the first image)
 
+# `with` keyword
+
+Another way to use the `try-except-finally` conveniently 
+
+Used to manage resources that require cleanup or release of resources. Eliminates boilerplate code and makes code readable
+
+Every `with` keyword uses the `__enter()__`  and `__exit__()` functions from the context manager. A context manger is any object that has an associated `__enter()` and `__exit()__` block
+
+```python 
+with expression as target:
+	# code block for with
+```
+
+1. The context expression (the expression given in the [`with_item`](https://docs.python.org/3/reference/compound_stmts.html#grammar-token-python-grammar-with_item)) is evaluated to obtain a context manager.
+    
+2. The context manager’s `__enter__()` is loaded for later use.
+    
+3. The context manager’s `__exit__()` is loaded for later use.
+    
+4. The context manager’s `__enter__()` method is invoked.
+    
+5. If a target was included in the [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement, the return value from `__enter__()` is assigned to it.
+
 

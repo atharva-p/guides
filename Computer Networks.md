@@ -13,6 +13,5 @@ In order for data to reach from one device to another, data passes through links
 Data packets coming from source to routers have only the MAC addresses attached to them, they do not have any network information associated with them.  
 
 ## Responsibilities 
-
 ### at source 
-takes data
+takes data 

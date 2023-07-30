@@ -514,7 +514,7 @@ Another way to use the `try-except-finally` conveniently
 
 Used to manage resources that require cleanup or release of resources. Eliminates boilerplate code and makes code readable
 
-Every `with` keyword uses the `__enter()__`  and `__exit__()` functions from the context manager. A context manger is any object that has an associated `__enter()` and `__exit()__` block
+Every `with` keyword uses the `__enter()__`  and `__exit__()` functions from the context manager. A context manger is any object that has an associated `__enter()__` and `__exit()__` block. The expression provided should result in a context manager
 
 ```python 
 with expression as target:
@@ -530,5 +530,21 @@ with expression as target:
 4. The context manager’s `__enter__()` method is invoked.
     
 5. If a target was included in the [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement, the return value from `__enter__()` is assigned to it.
+
+# Iterators vs list
+
+A list is simply a collection of elements enclosed in [] 
+
+Iterators are object that conform to the iterator protocol. To create an iterator of your own, a class needs to have the `__iter__()` and the `__next()__` functions. 
+
+# os.scandir(dir_path) 
+
+Scans the directory for files and other sub directories. returns a special directory iterator which can be iterated to get more info about the directory and it's contents. 
+
+https://docs.python.org/3.5/library/os.html?highlight=scandir#os.scandir
+
+# working with files
+
+[Taken from here](https://realpython.com/working-with-files-in-python)
 
 

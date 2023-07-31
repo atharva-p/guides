@@ -46,3 +46,9 @@ TCP is the connection-oriented protocol where the delivery of data is guaranteed
 
 TCP segments aren't self contained because they require a connection to be formed between devices (unlike datagrams which don't require connections)
 
+## IPv4 datagram format
+
+![[Pasted image 20230730231129.png]]
+
+![[Pasted image 20230730231139.png]]
+

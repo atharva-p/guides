@@ -546,3 +546,7 @@ Special iterables that perform lazy evaluation. This means that the iterable ite
 
 This helps in saving memory by not storing everything in memory at once. Good example is `os.walk()` 
 
+# `os.walk()`
+
+Generates file names in directory tree by walking top-down (or bottom-up depending on options) the tree. Unlike `os.scandir()` this is not limited to searching only that directory but also searches subdirectories. 
+

@@ -539,3 +539,10 @@ Identity is python is checked using the `is` keyword
 
 - `==` checks for equality of values.
 - `is` checks if two variables refer to the same object in memory.
+
+# Generator objects 
+
+Special iterables that perform lazy evaluation. This means that the iterable items are generated on-the-fly every new iteration as you loop through the iterable. 
+
+This helps in saving memory by not storing everything in memory at once. Good example is `os.walk()` 
+

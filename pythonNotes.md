@@ -531,4 +531,11 @@ with expression as target:
     
 5. If a target was included in the [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement, the return value from `__enter__()` is assigned to it.
 
+# Equality vs identity (`is`) 
 
+Equality is denoted by the `==` symbol whereas identity is denoted by the `===` symbol. 
+
+Identity is python is checked using the `is` keyword
+
+- `==` checks for equality of values.
+- `is` checks if two variables refer to the same object in memory.

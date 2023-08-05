@@ -13,4 +13,6 @@ quick recaps are titled as qnn
 
 Tutorials (some are complementary, some are supplementary). Titled as Tnn. Tutorials are not part of the syllabus. Useful to build c++ programming skills. 
 
+![](Pasted%20image%2020230805121009.png)
+
 

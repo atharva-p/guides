@@ -11,9 +11,6 @@ Custom types can be created by using either `class` or `struct`. The amount of m
 
 Function templates allow for arguments of arbitrary types. For everything else, types must be explicitly stated by the programmer. 
 
-## Type conversions 
-
-You can't change the type of a variable (or return value of a function) at some later point. However, the value of variable (or a function's return value) can be converted into some another type. This may lead to data loss or data incorrectness (for which we should convert types safely) 
 
 
 

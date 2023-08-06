@@ -43,6 +43,23 @@ Using the same example, the linear straight line (which has high bias) will have
 
 On the other hand, the squiggly line, even though fits the actual function very well, does so by hugging itself to only the data points from the training dataset. The ML function won't be able to perform on testing data as it's bound heavily to the training data points. Hence, this model will have a high variance. 
 
-# Underfitting and Overfitting 
+# Overfitting and underfitting 
+
+## Overfitting
+
+Because the squiggly line performs for the training data but not for the testing data, we say that the model is overfit. 
+
+An overfit model has **low bias** (because it can fit close with the actual relationship function) and **high variance** (because it performs poorly when you change the data set). 
+
+## Underfitting 
+
+The straight line can perform on both the training and testing data sets with similar accuracy (low variance) but does not fit well to the actual relationship, meaning the predictions are not close to ideal (high bias). A model which has **high bias and low variance** is an underfit model  
+
+## Ideal model 
+
+The ideal model is somewhere in the middle of underfitting and overfitting. 
+
+An ideal ML model can accurately model the true relationship, which means it has low bias. It also has low variability (or low variance), by producing consistent predictions across different data sets. 
+
 
 

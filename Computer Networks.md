@@ -13,8 +13,8 @@ In order for data to reach from one device to another, data passes through links
 Data packets coming from source to routers have only the MAC addresses attached to them, they do not have any network information associated with them.  
 
 ## Responsibilities 
-Network layer operates at the source, router and the destination and has different responsibilities
 
+Network layer operates at the source, router and the destination and has different responsibilities
 ### at source 
 1. takes data from the previous layers / other protocols, forms an IP packet with routing information
 2. The header of the packet also contains logical addresses (an IP address is a type of logical address) of the source and destination

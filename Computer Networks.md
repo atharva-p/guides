@@ -75,3 +75,37 @@ One source and a group of destinations. relationship is one to many. source is a
 
 ![](Pasted%20image%2020230809214456.png)
 
+Multicasting starts with one packet from the source that gets duplicated by the routers. Takes less bandwidth Only one single copy of the packet travels between any two routers. 
+
+In multiple unicasting, several packets are sent from the source. takes more bandwidth. Multiple copies of packets may travel between any two routers. 
+
+# Internet group management protocol (IGMP) 
+
+it is not a routing protocol. it is responsible for correcting and interpreting information about groups in a network. 
+
+Type of IGMP messages: 
+1. membership query messages 
+	1. general 
+	2. group-specific 
+	3. group and source specific 
+2. membership report 
+
+## membership query message format 
+
+![](Pasted%20image%2020230809220212.png)
+
+type of the message (8bits) - query or report
+
+response code (8bits) - response time 
+
+group address (32 bits) - x.y.z.t 
+
+resv - reserved for future and is not used. 
+
+s - suppress flag 
+
+qrv - querier's robustness variable 
+
+qqic - querier's query interval code 
+
+

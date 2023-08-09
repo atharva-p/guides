@@ -62,3 +62,16 @@ same packet as arp, only difference between for request the value is 3 and reply
 3. requesting machine must run rarp client, responding will run rarp server. 
 
 rarp packet is also encapsulated to a data link layer frame. 
+
+# Unicasting
+
+One source and one destination. relationship between source and destination is one to one. Router forwards the datagram received by it through one of it's interfaces. 
+
+# Multicasting 
+
+One source and a group of destinations. relationship is one to many. source is a unicast address, destination is a group address. the router may forward the received datagram through several of it's interfaces. 
+
+## Multicasting vs multiple unicasting 
+
+![](Pasted%20image%2020230809214456.png)
+

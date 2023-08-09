@@ -48,7 +48,7 @@ TCP segments aren't self contained because they require a connection to be forme
 
 ## IPv4 datagram format
 
-![[Pasted image 20230730231129.png]]
+![ipv4 datagram format image](./Pasted image 20230730231129.png)
 
 ![[Pasted image 20230730231139.png]]
 

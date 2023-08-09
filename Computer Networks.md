@@ -38,3 +38,11 @@ target hardware address (32 bits) - mac address of target (filed with 0s for a r
 
 target protocol address (32 bits) - ip address of the target 
 
+# Cases
+
+gives the target ip address used based on 4 cases 
+
+1. you're a host and you want to send on the same network - target Ip address is the destination ip address in the IP datagram
+2. you're a host and you want to send a packet on a different network - target ip address is that of a router (because you need the physical address of the router also) 
+3. you're a router and you want to send a packet to a host on the same network - target ip address of the arp packet is the destination ip address in the ip datagram
+4. you're a router and you want to send a packet to a host on a different network - target ip address is the ip address of a router

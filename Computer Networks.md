@@ -2,6 +2,8 @@
 
 # Address resolution protocol 
 
+logical address ----> physical address
+
 Logical address - internetwork address, denotes the address of the network, and is implemented using software. Different protocols use different logical addresses. IP is the logical address implemented by the TCP/IP protocol. 
 
 Physical address - local address, denotes the devices using their hardware. Implemented at the hardware level. Media access control (MAC) address is a physical address. 
@@ -46,3 +48,15 @@ gives the target ip address used based on 4 cases
 2. you're a host and you want to send a packet on a different network - target ip address is that of a router (because you need the physical address of the router also) 
 3. you're a router and you want to send a packet to a host on the same network - target ip address of the arp packet is the destination ip address in the ip datagram
 4. you're a router and you want to send a packet to a host on a different network - target ip address is the ip address of a router
+
+# Reverse address resolution protocol (rarp) 
+
+physical address ----> logical address. 
+
+to create an IP datagram, host needs to know it's own IP address. 
+
+same packet as arp, only difference between for request the value is 3 and reply the value is 4. 
+
+1. rarp request is broadcast on the local network
+2. another device on the network with knowledge of all the IP addresses will response with a rarp reply. 
+3. requesting machine must run rarp client, responding will run rarp server. 

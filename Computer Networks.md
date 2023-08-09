@@ -98,7 +98,7 @@ type of the message (8bits) - query or report
 
 response code (8bits) - response time 
 
-group address (32 bits) - x.y.z.t 
+group address (32 bits) - x.y.z.t. all 0s for general query messages.
 
 resv - reserved for future and is not used. 
 
@@ -108,4 +108,12 @@ qrv - querier's robustness variable
 
 qqic - querier's query interval code 
 
+number of sources (N) - all 0s for group query message, all 0s for general query message, N for group-source-specific messages. 
 
+## membership report format 
+
+![](Pasted%20image%2020230809220758.png)
+
+Record type - there are 6 record types currently. they have types 1-6 
+
+auxiliary data len - length of auxiliary data included in each report.  

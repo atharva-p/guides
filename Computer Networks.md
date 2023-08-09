@@ -55,10 +55,8 @@ TCP segments aren't self contained because they require a connection to be forme
 
 Logical addresses are used to recognize hosts and routers at the network level. It's is unique universally, and is implemented in software. IP is the 32 bit logical address assigned by the TCP/IP protocol 
 
-Physical addresses are implemented using hardware. it's unique locally, like the MAC address. You need both logical and physical addresses because a network can use two different networking protocols at the same time. IP address also acts like your neighborhood address (street name, city) and MAC address acts like your name. 
+Physical addresses are implemented using hardware. it's unique locally, like the MAC address. You need both logical and physical addresses because a network can use two different networking protocols at the same time. IP address also acts like your neighborhood address (street name, city) and MAC address acts like your name.
 
-=======
-![ipv4 datagram format image](./Pasted image 20230730231129.png)
->>>>>>> origin/college
+
 
 

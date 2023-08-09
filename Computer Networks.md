@@ -60,3 +60,5 @@ same packet as arp, only difference between for request the value is 3 and reply
 1. rarp request is broadcast on the local network
 2. another device on the network with knowledge of all the IP addresses will response with a rarp reply. 
 3. requesting machine must run rarp client, responding will run rarp server. 
+
+rarp packet is also encapsulated to a data link layer frame. 

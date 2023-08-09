@@ -117,3 +117,6 @@ number of sources (N) - all 0s for group query message, all 0s for general query
 Record type - there are 6 record types currently. they have types 1-6 
 
 auxiliary data len - length of auxiliary data included in each report.  
+
+# TCP/IP protocol
+

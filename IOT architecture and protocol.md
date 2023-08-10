@@ -24,3 +24,8 @@ security - makes sure the data from the IOT system is secure and prevents outsid
 management - manages various parts of the IOT system. 
 
 IOT data and services - processing, managing interactions within the system and providing services. 
+
+# IOT reference model
+
+![](Pasted%20image%2020230810202428.png)
+

@@ -41,3 +41,17 @@ IOT data and services - processing, managing interactions within the system and 
 6. design to ensure scalability, performance and evolvability, simplicity and diversity
 7. design for simplicity of management 
 
+# Protocol of IOT 
+
+application layer - responsible for providing user interfaces and functionalities to the users. hypertext transfer protocol (HTTP) is used in this layer 
+
+data link layer - concerned with the local delivery of data between nodes on the same network. Ethernet, IEEE 802.11 wifi protocols are examples 
+
+physical layer - responsible for collecting data from the physical world and transmitting it to other layers of the architecture. it can include 
+
+1. sensors - they collect data from the real world 
+2. gateways - these devices connect sensors and actuators to the network. they convert data collected into transmittable format
+3. actuators - take action based on the input from the sensors
+4. power sources - batteries, power lines or solar 
+5. network - physical transmission of data, like using wired ethernet, wifi or bluetooth 
+

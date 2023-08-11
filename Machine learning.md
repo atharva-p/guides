@@ -56,6 +56,17 @@ Grouping data together based on similarity of data is known as clustering. Diffe
 ## Association analysis. 
 
 Finding relationships or associations between data is known as association analysis. For example, if many people buy item A and item B together in a store, is there an association between the two items? 
+
+# Reinforcement learning 
+
+ML model uses it's environment to learn by using rewards or punishments to judge and improve it's performance. 
+
+key components are: 
+agent - the learner or decision maker within an environment
+environment - external system with which the agent interacts
+reward - a scalar value provided by the environment through which the learner judges it's performance. 
+
+Example - self driving cars
 # [Bias and Variance](https://youtu.be/EuBBz3bI-aA) 
 
 ## Bias 

@@ -16,8 +16,12 @@ _to be written_
 
 # Types of machine learning methods 
 
-1. Supervised learning - model gets to train on data that is labelled. Data labelling adds meaningful information or context to the data so that the machine learning model can learn from it. Other definitions of labelled data: input data that is accompanied by the desired output data. Used for classification or regression. 
+1. Supervised learning - model gets to train on data that is labelled. Data labelling adds meaningful information or context to the data so that the machine learning model can learn from it. Other definitions of labelled data: input data that is accompanied by the desired output data. used for
+	1. classification
+	2. regression
 2. Unsupervised learning - model gets unlabeled data to train on. In this, the model tries to figure out patterns in data without explicit guidance. Used for clustering
+	1. clustering 
+	2. association analysis
 3. Semi supervised learning - model trains on both labelled and unlabeled data.
 4. Reinforcement learning - model trains in an environment where it receives feedback in the form of rewards or punishments. 
 
@@ -25,6 +29,33 @@ _to be written_
 
 Noise refers to irrelevant or random variation in data that doesn't represent any meaningful pattern
 
+# Supervised learning 
+
+Labelled training data is used in supervised learning. Main goal is to predict (either by classification or by regression) using the labelled training data. 
+
+It is also known as the predictive model. There are two methods to perform supervised learning, classification and regression. 
+
+## Classification 
+
+Prediction / segregation into a category is known as classification. useful for image classification, prediction of disease, recognition of handwriting, win-loss in games, spam or not spam 
+
+## Regression 
+
+Prediction of a real valued variable is called regression. The predictor variable (independent variable) and the target variable are continuous in nature. 
+
+In linear regression, a straight line is fitted using the variables, using the least squares method. 
+
+# Unsupervised learning 
+
+No labelled training data is used for the ML model, since prediction is not the main goal. The main objective is to find underlying patterns in the data given. Unsupervised learning comes under the descriptive model. 
+
+## Clustering 
+
+Grouping data together based on similarity of data is known as clustering. Different measures of similarity can be applied for clustering. In distance based clustering, data is grouped together into one cluster (and is considered to be similar) if the distance between the data is less. 
+
+## Association analysis. 
+
+Finding relationships or associations between data is known as association analysis. For example, if many people buy item A and item B together in a store, is there an association between the two items? 
 # [Bias and Variance](https://youtu.be/EuBBz3bI-aA) 
 
 ## Bias 

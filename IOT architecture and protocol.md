@@ -29,3 +29,15 @@ IOT data and services - processing, managing interactions within the system and 
 
 ![](Pasted%20image%2020230810202428.png)
 
+# Main design principles 
+
+![](Pasted%20image%2020230811062113.png)
+
+1. overall design objective is to get horizontal system of real world services that are open source oriented. 
+2. design for reuse of IOT resources 
+3. design for a set of support services that can be used for application development and execution 
+4. design for abstraction 
+5. design to ensure trust, security and privacy 
+6. design to ensure scalability, performance and evolvability, simplicity and diversity
+7. design for simplicity of management 
+

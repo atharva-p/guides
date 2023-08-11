@@ -1,4 +1,18 @@
 # Unit 1 
+## questions 
+
+12M 
+
+IOT architecture and it's layer.
+IOT Reference model
+Main design principle
+
+4m
+
+Protocol of IOT (physical, data link, network, transport, application)
+Difference LAN, WAN
+Basic and advance devices
+Devices and gateway difference
 # IOT architecture and it's layers 
 
 ![](Pasted%20image%2020230810195755.png)
@@ -55,3 +69,14 @@ physical layer - responsible for collecting data from the physical world and tra
 4. power sources - batteries, power lines or solar 
 5. network - physical transmission of data, like using wired ethernet, wifi or bluetooth 
 
+# difference between LAN and WAN 
+
+![](WhatsApp%20Image%202023-08-11%20at%2006.40.47.jpg)
+
+# basic vs advanced IOT devices 
+
+![](WhatsApp%20Image%202023-08-11%20at%2006.40.47%201.jpg)
+
+# devices vs gateways 
+
+![](WhatsApp%20Image%202023-08-11%20at%2006.40.48.jpg)

@@ -103,5 +103,15 @@ The ideal model is somewhere in the middle of underfitting and overfitting.
 
 An ideal ML model can accurately model the true relationship, which means it has low bias. It also has low variability (or low variance), by producing consistent predictions across different data sets. 
 
+# Regularization 
 
+used for reducing overfitting by adding a penalty term
+## lasso regularization (L1) - absolute value 
 
+cost = 1/2n (summation i = 1 to n) (y - ycap)^2 + lambda (summation j = 1 to p) (theta of j)^2
+
+![](Pasted%20image%2020230812064316.png)
+
+## ridge regularization (L2) - square term 
+
+![](Pasted%20image%2020230812064305.png)

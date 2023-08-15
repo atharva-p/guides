@@ -40,4 +40,10 @@ Tutorials (some are complementary, some are supplementary). Titled as Tnn. Tutor
 
 # Expressions vs statements 
 
-an expression must have an value, unlike statements
+an expression must have an value 
+
+![](Pasted%20image%2020230815183727.png)
+
+a statement has no value 
+
+![](Pasted%20image%2020230815183753.png)

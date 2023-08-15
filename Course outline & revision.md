@@ -21,14 +21,23 @@ Tutorials (some are complementary, some are supplementary). Titled as Tnn. Tutor
 
 # Pre requisite C topics
 
+## video 1
+
 - [ ] arrays 
 - [ ] structs and unions 
 - [ ] Pointers 
-	- [ ] pointer aliasing (using the pointer to change the value of the entity instead of dealing with the memory)
+	- [ ] pointer aliasing (using the pointer to change the value of the entity instead of dealing with the memory, also called dereferencing?)
 - [ ] Strings
 - [ ] type modifiers
 	- [ ] short 
 	- [ ] long 
 	- [ ] signed 
 	- [ ] unsigned
-- [ ] 
+
+# Literals 
+
+![](Pasted%20image%2020230815182112.png)
+
+# Expressions vs statements 
+
+an expression must have an value, unlike statements

@@ -24,7 +24,7 @@ Tutorials (some are complementary, some are supplementary). Titled as Tnn. Tutor
 - [ ] arrays 
 - [ ] structs and unions 
 - [ ] Pointers 
-	- [ ] pointer aliasing
+	- [ ] pointer aliasing (using the pointer to change the value of the entity instead of dealing with the memory)
 - [ ] Strings
 - [ ] type modifiers
 	- [ ] short 

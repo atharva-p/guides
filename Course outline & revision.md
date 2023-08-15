@@ -19,4 +19,16 @@ Tutorials (some are complementary, some are supplementary). Titled as Tnn. Tutor
 
 ![](Pasted%20image%2020230805121538.png)
 
+# Pre requisite C topics
 
+- [ ] arrays 
+- [ ] structs and unions 
+- [ ] Pointers 
+	- [ ] pointer aliasing
+- [ ] Strings
+- [ ] type modifiers
+	- [ ] short 
+	- [ ] long 
+	- [ ] signed 
+	- [ ] unsigned
+- [ ] 

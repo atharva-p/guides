@@ -33,3 +33,18 @@ Tutorials (some are complementary, some are supplementary). Titled as Tnn. Tutor
 	- [ ] long 
 	- [ ] signed 
 	- [ ] unsigned
+
+# video 2 
+
+- [ ] containers 
+	- [ ] array 
+	- [ ] structure 
+		- [ ] union
+- [ ] derived containers
+	- [ ] list 
+	- [ ] trees 
+	- [ ] graph 
+	- [ ] stack 
+	- [ ] queue
+- [ ] pointers
+- [ ] functions

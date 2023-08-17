@@ -1,2 +1,1 @@
-`void*` pointers cannot be dereferenced!! 
-
+`void*` pointers cannot be dereferenced, nor can you use pointer arithmetics on `void*` pointers 

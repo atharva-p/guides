@@ -1,6 +1,8 @@
 # Outline
 
 The course outline for modern programming in cpp
+
+[revision materials](https://drive.google.com/drive/folders/1D8CjZ2sUTTqRnG3PdjnSAWWg3cL7PVVX)
 # C revision 
 
 ![](Pasted%20image%2020230805120128.png)
@@ -25,16 +27,13 @@ Tutorials (some are complementary, some are supplementary). Titled as Tnn. Tutor
 
 - [ ] arrays 
 - [ ] structs and unions 
-- [ ] Pointers 
-	- [ ] pointer aliasing (using the pointer to change the value of the entity instead of dealing with the memory, also called dereferencing?)
-- [ ] Strings
 - [ ] type modifiers
 	- [ ] short 
 	- [ ] long 
 	- [ ] signed 
 	- [ ] unsigned
 
-# video 2 
+## video 2 
 
 - [ ] containers 
 	- [ ] array 
@@ -46,5 +45,15 @@ Tutorials (some are complementary, some are supplementary). Titled as Tnn. Tutor
 	- [ ] graph 
 	- [ ] stack 
 	- [ ] queue
-- [ ] pointers
-- [ ] functions
+- [ ] pointers 
+	- [ ] pointer array duality (using pointer as array, vice versa)
+	- [ ] malloc 
+	- [ ] dynamically allocated arrays 
+	- [ ] pointer to a structure 
+- [ ] functions 
+	- [ ] call by value vs reference 
+	- [ ] recursion 
+		- [ ] two functions can be co recursive??
+	- [ ] function pointers 
+- [ ] input output on files
+- [ ] strings

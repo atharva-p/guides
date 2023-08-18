@@ -56,4 +56,4 @@ Tutorials (some are complementary, some are supplementary). Titled as Tnn. Tutor
 		- [ ] two functions can be co recursive??
 	- [ ] function pointers 
 - [ ] input output on files
-- [ ] strings
+- [ ] strings (specifically c type strings)

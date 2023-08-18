@@ -42,3 +42,5 @@ std::cout << "using the c++ cout function " << "address = " << (void*)charPointe
 ```
 
 this will fix the address error but in the value you'll end up getting 1025 (unlike 1 for the C code). this is because you cannot dereference a void pointer and dereferencing an `int` pointer means that c++ will consider the next 4 bytes in memory to print as an integer
+
+we can only print the address in case of a `void*` pointer. 

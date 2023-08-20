@@ -89,3 +89,16 @@ CREATE TABLE `cyclist`.`hearttest1` (
   `value` INT NULL);
 ```
 
+check if all the columns are correct with their respective types
+
+## starting the data import
+
+```sql 
+LOAD DATA LOW_PRIORITY LOCAL INFILE 'C:/Users/athar/Downloads/202207-divvy-tripdata.csv' 
+INTO TABLE `cyclist`.`202207-divvy-tripdata` 
+CHARACTER SET armscii8 
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' ESCAPED BY '"' LINES TERMINATED BY '\r\n' 
+IGNORE 1 LINES;
+```
+
+

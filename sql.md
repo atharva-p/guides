@@ -101,4 +101,14 @@ FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' ESCAPED BY '"' LINES TERMINA
 IGNORE 1 LINES;
 ```
 
+# finding count of rows with data 
+
+```sql 
+SELECT COUNT(*)
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE table_schema = 'cyclist'
+AND table_name = '202207-divvy-tripdata'
+```
+
+
 

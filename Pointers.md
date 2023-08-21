@@ -79,6 +79,18 @@ std::cout << *(arrayPointer + 1) << std::endl;
 // std::cout << *(array + 1) << std::endl; will also work
 ```
 
+`(array + i)` is the same as `&array[i]`. Address of the first element of the array is known as the base address of the array 
+
+consider this 
+
+```c++ 
+int* arrayPointer = &array; 
+arrayPointer++; // valid 
+array++; // invalid
+```
+
+## arrays as function arguments 
+
 
 
 

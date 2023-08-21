@@ -57,3 +57,32 @@ int main() {
 	return 0;
 }
 ```
+
+# Pointers and arrays 
+
+we have the following array, we can declare a pointer to that array by assigning the address of the first element of that array
+
+```c++
+int array[5] = {2, 3, 4, 5, 6}; 
+int* arrayPointer = &array[0]; 
+
+std::cout << *(arrayPointer + 1) << std::endl; 
+```
+
+this will print `3` since we are incrementing the address from the pointer by 1. 
+
+Writing `array` is analogous to `&array[0]` so the above code can also be written as
+
+```c++
+int* arrayPointer = array; 
+std::cout << *(arrayPointer + 1) << std::endl; 
+// std::cout << *(array + 1) << std::endl; will also work
+```
+
+
+
+
+
+
+
+

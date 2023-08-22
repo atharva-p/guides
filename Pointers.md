@@ -148,6 +148,8 @@ name[0] = 'J';
 name[1] = 'O'; // and so on 
 ```
 
+character arrays and pointers can be used in a similar way to what is described in [Pointers and arrays](#-pointers-and-arrays)
+
 
 
 

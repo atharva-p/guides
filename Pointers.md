@@ -159,6 +159,8 @@ int main(){
 
 	std::cout << "before changing " << name << std::endl; 
 	stringPointer[1] = 'A';  // same as *(stringPointer + 1)
+	// you can also write
+	// *(name + 1) = 'A'; since name will denote the address of first element of the char array 
 
 	std::cout << "after changing " << name << std::endl; 
 	return 0;
@@ -169,6 +171,34 @@ int main(){
 before changing JOHN
 after changing JAHN
 ```
+
+### string literals 
+
+string literals always have the type `const char`, but compiler might be lenient in some cases such as 
+
+```c++
+char testString[] = "hello"; // the type should've been const char
+testString[1] = 'o'; // this is even allowed
+```
+
+but this does not work with pointers 
+
+```c++ 
+void customPrint(const char* charPointer) { // without const char* this wil not work. 
+	while (*charPointer != '\0') {
+		std::cout << *charPointer << std::endl; 
+		charPointer++; 
+	}
+	std::cout << '\0' << std::endl; 
+}
+
+int main() {
+	const char testString[] = "hello";
+	customPrint(testString); 
+	return 0; 
+}	
+```
+
 
 
 

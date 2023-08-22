@@ -91,6 +91,42 @@ array++; // invalid
 
 ## arrays as function arguments 
 
+when an array is a parameter for a function, the c++ compiler will use call by reference instead of call by value, which means that 
+
+```c++ 
+int someFunction(int array[]){}; 
+// is interpreted as
+int someFunction(int* array[]) {}; 
+```
+
+### why won't this work? 
+
+```c++
+void someFunction(int array[]){
+	std::cout << sizeof(array) << std::endl; // expected: 20 bytes
+	std::cout << sizeof(array[0]) << std::endl;  // expected: 4 bytes 
+}
+
+int main(){
+	int a[5] = {1, 1, 1, 1, 1}; 
+	std::cout << a << std::endl;  // address of first item of a 
+	std::cout << sizeof(a) << std::endl; // address of the array a (4 * 5 = 20bytes)
+	someFunction(a); 
+}
+```
+
+output: 
+
+```
+0000006692F8F878
+size of the array 20
+size of the pointer that holds the memory location of the first element of the array 8
+4
+```
+
+we don't get the expected 20 bytes size of the array from the function's local scope because we're actually finding the `sizeof(int* array)`, it's a pointer, not the size of the array. size of pointers is 8 bytes in a 64 bit system and 4 bytes in a 32 bit system. 
+
+
 
 
 

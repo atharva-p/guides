@@ -148,7 +148,29 @@ name[0] = 'J';
 name[1] = 'O'; // and so on 
 ```
 
-character arrays and pointers can be used in a similar way to what is described in [Pointers and arrays](#-pointers-and-arrays)
+character arrays and pointers can be used in a similar way to what is described in _pointers and arrays_ 
+
+```c++ 
+#include <iostream> 
+
+int main(){
+	char name[] = "JOHN"; 
+	char* stringPointer = &name[0]; 
+
+	std::cout << "before changing " << name << std::endl; 
+	stringPointer[1] = 'A';  // same as *(stringPointer + 1)
+
+	std::cout << "after changing " << name << std::endl; 
+	return 0;
+}
+```
+
+```
+before changing JOHN
+after changing JAHN
+```
+
+
 
 
 

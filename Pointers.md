@@ -130,8 +130,23 @@ we don't get the expected 20 bytes size of the array from the function's local s
 
 keep in mind that array names used to denote addresses are different than pointers that store addresses. pointer arithmetic cannot be applied to array names. 
 
-# character arrays and pointers 
+# character arrays (strings) and pointers 
 
+## ways to store strings *using c* 
+
+```c++
+// string literal
+char name[5] = "JOHN" // the null termination character is implicit in this case. One byte extra for the null character
+char name[] = "JOHN" // compiler can also figure out the size
+
+// using comma separateed list 
+char name[] = {'J', 'O', 'H', 'N', '\0'} // null character is explicit
+
+// can also store manually using the indices 
+char name[5]; 
+name[0] = 'J'; 
+name[1] = 'O'; // and so on 
+```
 
 
 

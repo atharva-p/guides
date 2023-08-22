@@ -130,6 +130,10 @@ we don't get the expected 20 bytes size of the array from the function's local s
 
 keep in mind that array names used to denote addresses are different than pointers that store addresses. pointer arithmetic cannot be applied to array names. 
 
+# character arrays and pointers 
+
+
+
 
 
 

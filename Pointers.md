@@ -209,8 +209,20 @@ int main() {
 
 # Pointers and multidimensional arrays 
 
+## type mismatch while assigning addresses to arrays 
 
+```c++ 
+int testArr[2] = {1, 2}; 
+int* pointer = testArr; // allowed
 
+int* pointer = &testArr; // not allowed, a type of int (*[2])pointer is expected
+
+int (*pointer)[2] = &testArr; // allowed
+```
+
+just assigning `testArr` to `int*` pointer is valid because `testArr` will be resolved to the address of the first element of the array, which is an integer. 
+
+however, assigning `&testArr` to the `int*` pointer will result in a type mismatch because it resolves to the address of the entire array. 
 
 
 

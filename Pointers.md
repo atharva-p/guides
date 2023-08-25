@@ -60,6 +60,14 @@ int main() {
 
 # Pointers and arrays 
 
+## array names and pointers
+
+let A be the name of an array 
+
+`*(A + i)` is the same as `A[i]` and 
+
+`(A + i)` is the same as `&A[i]` 
+
 we have the following array, we can declare a pointer to that array by assigning the address of the first element of that array
 
 ```c++

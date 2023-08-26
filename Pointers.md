@@ -60,8 +60,6 @@ int main() {
 
 # Pointers and arrays 
 
-## array names and pointers
-
 let A be the name of an array 
 
 `*(A + i)` is the same as `A[i]` and 
@@ -95,6 +93,16 @@ consider this
 int* arrayPointer = &array; 
 arrayPointer++; // valid 
 array++; // invalid
+```
+
+You can use a pointer with the array\[index] syntax too 
+
+```c++
+int arr[5] = {1, 2, 3, 4, 5}; 
+int* p1 = arr; 
+
+std::cout << p1[0] << std::endl; // will print 1 
+std::cout << &p1[0] << std::end; // will print the address of 1
 ```
 
 ## arrays as function arguments 
@@ -206,7 +214,6 @@ int main() {
 	return 0; 
 }	
 ```
-
 # Pointers and multidimensional arrays 
 
 ## type mismatch while assigning addresses to arrays 
@@ -223,6 +230,102 @@ int (*pointer)[2] = &testArr; // allowed
 just assigning `testArr` to `int*` pointer is valid because `testArr` will be resolved to the address of the first element of the array, which is an integer. 
 
 however, assigning `&testArr` to the `int*` pointer will result in a type mismatch because it resolves to the address of the entire array. 
+
+## using pointers with multidimensional arrays 
+
+```c++
+#include <iostream> 
+
+int main(){
+	int testArr1[2][3] = { {1, 2, 3}, {4, 5, 6} }; 
+	
+	int (*p1)[3] = testArr1;
+
+	std::cout << p1 << " with type " << typeid(p1).name() << std::endl;
+	std::cout << *p1 << " with type " << typeid(*p1).name() << std::endl;
+	std::cout << p1 + 1 << " with type " << typeid((p1 + 1)).name() << std::endl;
+	std::cout << *(p1 + 1) << " with type " << typeid(*(p1 + 1)).name() << std::endl;
+	std::cout << (*(p1 + 1) + 2) << " with type " << typeid((*(p1 + 1) + 2)).name() << std::endl; 
+	std::cout << *(*p1 + 1) << " with type " << typeid(*(*p1 + 1)).name() << std::endl;
+
+
+	return 0;
+} 
+```
+
+output 
+
+```
+00000095B99CF778 with type int (* __ptr64)[3]
+00000095B99CF778 with type int [3]
+00000095B99CF784 with type int (* __ptr64)[3]
+00000095B99CF784 with type int [3]
+00000095B99CF78C with type int * __ptr64
+2 with type int
+```
+
+## declaring a 3-dimensional array 
+
+```c++
+#include <iostream> 
+
+int main() {
+	int arr[3][2][2] = { {{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}, {{9, 10}, {11, 12}} }; 
+
+	int(*p1)[2][2] = arr; 
+
+	std::cout << p1 << " with type " << typeid(p1).name() << std::endl; 
+	std::cout << *p1 << " with type " << typeid(*p1).name() << std::endl;
+	std::cout << **p1 << " with type " << typeid(**p1).name() << std::endl;
+	std::cout << ***p1 << " with type " << typeid(***p1).name() << std::endl;
+	return 0; 
+}
+```
+
+output 
+
+```
+0000000B3E11F4F8 with type int (* __ptr64)[2][2]
+0000000B3E11F4F8 with type int [2][2]
+0000000B3E11F4F8 with type int [2]
+1 with type int
+```
+
+## dereferencing arithmetics 
+
+![](Pasted%20image%2020230826185416.png)
+
+## passing multidimensional arrays to functions 
+
+```c++
+#include <iostream> 
+
+void receiveOneDimArr(int* arr) {
+	std::cout << arr << std::endl;
+}
+
+void receiveTwoDimArr(int(*arr)[2]) {
+	std::cout << arr << std::endl; 
+}
+
+void receiveThreeDimArr(int(*arr)[2][2]) {
+	std::cout << arr << std::endl; 
+}
+
+int main() {
+	int oneDimArr[2] = { 1, 2 }; 
+	int twoDimArr[2][2] = { {1, 2}, {3, 4} }; 
+	int threeDimArr[3][2][2] = { {{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}, {{9, 10}, {11, 12}} };
+
+	receiveOneDimArr(oneDimArr); 
+	receiveTwoDimArr(twoDimArr); 
+	receiveThreeDimArr(threeDimArr); 
+
+	return 0;
+} 
+```
+
+
 
 
 

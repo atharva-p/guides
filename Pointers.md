@@ -325,8 +325,76 @@ int main() {
 } 
 ```
 
+# Pointers and dynamic memory 
 
+## memory structure of an application 
 
+![](Pasted%20image%2020230826202125.png)
+
+## allocation 
+
+Dynamic memory is the heap memory (or the RAM of the system). dynamic memory allocation in C can be done with mainly four functions. these can also be used in c++ 
+
+1. malloc 
+2. calloc 
+3. realloc 
+4. free 
+
+in c++ this can be done using 
+1. new 
+2. delete 
+
+malloc (and calloc, realloc) will return a void pointer that will be needed to be typecast into the correct type so we can use the pointer obtained to dereference it (since void pointers cannot be dereferenced). 
+
+```c++ 
+int* pointer = (int*)malloc(20 * sizeof(int)); // will return a block of memory with space for 20 integers
+```
+
+calloc will take two arguments. Unlike malloc, calloc will actually initialize values to all positions with value 0 (instead of garbage wtih malloc). 
+
+```c++ 
+int* pointer = (int*)calloc(20, sizeof(int)); // calloc(number of elements, size of one element)
+```
+
+realloc is used to change the size of a block of memory. you can also reduce the size. realloc will copy the values from the previous memory block to the new memory block. 
+
+```c++
+int* new_pointer = (int*)realloc(pointer, 3 * sizeof(int)) // realloc(old_pointer, new size)
+```
+
+passing NULL to realloc's old_pointer parameter makes realloc equivalent to calling malloc 
+
+```c++
+int* pointer = (int*)realloc(NULL, 20 * sizeof(int)); 
+```
+
+### c++ allocation 
+
+```c++ 
+data_type *pointer_name = new data_type;
+// use the pointer obtained 
+// free the memory used 
+delete pointer_name; 
+```
+
+```c++
+// example 
+int *intPtr = new int;
+*intPtr = 42;
+
+// Use intPtr as needed
+
+delete intPtr; // Don't forget to free the memory when you're done using it
+```
+
+allocation (and deallocation) for arrays 
+
+```c++ 
+date_type *pointer_name = new data_type[size]; 
+// use the pointer obtained 
+// free the resources 
+delete[] pointer_name; 
+```
 
 
 

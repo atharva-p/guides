@@ -396,6 +396,185 @@ date_type *pointer_name = new data_type[size];
 delete[] pointer_name; 
 ```
 
+# returning pointers from functions 
+
+## unsafe returning of a pointer from a function
+
+```c++
+#include <iostream> 
+
+int* add(int* x, int* y) {
+	int c = (*x) + (*y); 
+	return &c; 
+}
+
+int main() {
+	int a = 1, b = 2; 
+
+	int* answer = add(&a, &b); 
+	std::cout << *answer << std::endl; 
+	return 0;
+}
+// output 3 (still works because the memory address of c is yet to be overwritten by something else)
+```
+
+`int* add(int*, int*)` returns a pointer to a variable that is local to the `add()` function. This is unsafe because after the execution of `add()`, it is removed from the stack and all of the memory allocations (including address of c) to `add()` are free to be used by other functions. 
+
+we can test that it is unsafe by calling another function (thereby making it allocate memory that was once occupied by `add()`) right before we dereference the address used by `c` 
+
+```c++
+#include <iostream> 
+
+int* add(int* x, int* y) {
+	int c = (*x) + (*y); 
+	return &c; 
+}
+
+void printSomething() {
+	std::cout << "this is a long sentence to be printed for seemingly no reason" << std::endl; 
+}
+
+int main() {
+	int a = 1, b = 2; 
+
+	int* answer = add(&a, &b); 
+	printSomething(); 
+	std::cout << *answer << std::endl; 
+	return 0;
+}
+```
+
+output 
+
+```
+this is a long sentence to be printed for seemingly no reason
+32762 //wrong output 
+```
+
+this can be solved by making a call to malloc and instead storing the answer in the heap. 
+
+```c++
+#include <iostream> 
+#include <stdio.h>
+#include <stdlib.h> 
+int* add(int* x, int* y) {
+	int* c = (int*)malloc(sizeof(int)); 
+	*c = *x + *y; 
+	return c; 
+}
+
+void printSomething() {
+	std::cout << "this is a long sentence to be printed for seemingly no reason" << std::endl; 
+}
+
+int main() {
+	int a = 1, b = 2; 
+
+	int* answer = add(&a, &b); 
+	printSomething(); 
+	std::cout << *answer << std::endl; 
+	free(answer); 
+	return 0;
+}
+```
+
+# Function pointers 
+
+Pointers can also point to functions. A function is a set of instructions stored in a contiguous block of memory (for most programming languages). This block is called the function's code segment or the text segment. Pointers that store address to functions store the address of the entry point of the function. 
+
+You can use pointers to call functions and to pass functions as arguments to other functions. You cannot perform pointer arithmetic on pointers to functions.
+
+## declaring function pointers 
+
+use this syntax `return_type (*pointer_name)(function_signature) = &function_name ` 
+
+```c++
+#include <iostream> 
+#include <stdio.h> 
+#include <stdlib.h> 
+
+int add(int a, int b) {
+	int ans = a + b; 
+	return ans; 
+}
+
+int main() {
+	int a = 10, b = 20; 
+	// function pointer to add 
+	// return_type (*pointer_name)(function_signature) = &function_name 
+	int (*funcPointer)(int, int) = &add; 
+
+	//calling the function using the pointer 
+	int answer = (*funcPointer)(a, b); 
+	std::cout << answer << std::endl; 
+
+	return 0;
+}
+```
+
+## syntactical convenience 
+
+```c++
+#include <iostream> 
+#include <stdio.h> 
+#include <stdlib.h> 
+
+int add(int a, int b) {
+	int ans = a + b; 
+	return ans; 
+}
+
+int main() {
+	int a = 10, b = 20; 
+	int (*funcPointer)(int, int) = add; 
+
+	//calling the function using the pointer 
+	int answer = funcPointer(a, b); 
+	std::cout << answer << std::endl; 
+
+	return 0;
+}
+```
+
+instead of `&function_name` just `function_name` is also fine. and to call the function using pointer you can use the name of the pointer `pointer_name(arguments)` instead of having to dereference the pointer. 
+
+## why use parenthesis for the declaration? 
+
+without the parenthesis, the compiler will interpret the pointer declaration as a function declaration instead
+
+```c++
+int *pointer_name(int, int) = &function_name // error because this is a function that is named "pointer_name" that returns an integer pointer
+```
+
+## another example 
+
+```c++
+#include <iostream> 
+#include <stdio.h> 
+#include <stdlib.h> 
+
+int add(int a, int b) {
+	int ans = a + b; 
+	return ans; 
+}
+
+void printGreeting(char* name) {
+	std::cout << "hello " << name << std::endl; 
+}
+
+int main() {
+	char myName[20] = "Atharva"; 
+
+	void (*pointer)(char*) = &printGreeting;
+	(*pointer)(myName);
+
+	return 0;
+}
+```
+
+# function pointers and callbacks 
+
+
 
 
 

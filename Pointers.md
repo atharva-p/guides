@@ -188,7 +188,7 @@ before changing JOHN
 after changing JAHN
 ```
 
-### string literals 
+### string literals and `const char` 
 
 string literals always have the type `const char`, but compiler might be lenient in some cases such as 
 

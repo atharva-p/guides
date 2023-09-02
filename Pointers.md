@@ -652,4 +652,17 @@ output `-1 4 -6 22 -31 50`
 
 note that we never had to change the implementation of our `bubbleSort()` function to change sorting order (ascending / descending) or the way numbers are ranked (ignoring signs). we did this by writing separate callback functions for each use case and just passing those to our `bubbleSort()` function. 
 
+callbacks are used in event handling. 
+
+# Memory leaks 
+
+memory leaks occur when unreferenced blocks of memory stay in the heap (as a result of not being deallocated using `delete` or `free` for C) or more blocks of memory are being added to the heap without releasing them when they are not needed. 
+
+this can occur if the pointer that points to heap memory block is a local variable on the stack for a function and multiple calls are made to that said function. This results in multiple calls to dynamic memory allocation, each time with a different pointer variable, resulting in the allocation of a different memory block. This consumes more and more heap memory overtime. 
+
+memory leaks are not just about not having unreferenced memory, they also occur when memory that is not being used isn't deallocated. 
+
+
+
+
 

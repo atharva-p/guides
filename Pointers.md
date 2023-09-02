@@ -583,8 +583,73 @@ int main() {
 ```
 # function pointers and callbacks 
 
+A callback function is a function that is passed to another function as a argument and can be called by the caller function. 
 
+with callback functions, you can have a modular function (a caller function) and you can change the behavior of some part of that function (a module or a callback) by changing the callback function passed to that caller function. 
 
+following is an example of callback functions being used to specify the ranking mechanism of bubble sort 
 
+```c++
+#include <iostream> 
+#include <cstdlib>
+
+void printArray(int* array, int size) {
+	for (int i = 0; i < size; i++) {
+		std::cout << array[i] << " "; 
+	}
+	std::cout << "\n"; 
+}
+
+int compare(int a, int b) {
+	if (a > b) {
+		return 1;
+	}
+	else
+		return 0;
+}
+
+int absoluteCompare(int a, int b) {
+	if (std::abs(a) > std::abs(b)) {
+		return 1;
+	}
+	else {
+		return 0; 
+	}
+
+}
+
+void bubbleSort(int* array, int size, int (*rankCallback)(int, int) ) {
+	for (int i = size - 1; i >= 0; i--) { 
+		for (int j = 0; j <= i - 1; j++) {  
+			if (rankCallback(array[j], array[j + 1])) {		// array[j] > array[j + 1]
+				// swap positions 
+				int temp = array[j]; 
+				array[j] = array[j + 1]; 
+				array[j + 1] = temp; 
+			}
+		}
+	}
+}
+
+int main() {
+	//int test[6] = { 1, 10, 11, 7, 6, 5 }; 
+	int test[6] = {-31, 22, -1, 50, -6, 4};
+
+	int size = sizeof(test) / sizeof(test[0]); 
+
+	bubbleSort(&test[0], size, &compare); 
+	printArray(test, size); 
+
+	return 0;
+}
+```
+
+output `-31 -6 -1 4 22 50` 
+
+if we change the code to `bubbleSort(&test[0], size, &absoluteCompare)` we would the array sorted ignoring the size of the integers
+
+output `-1 4 -6 22 -31 50`
+
+note that we never had to change the implementation of our `bubbleSort()` function to change sorting order (ascending / descending) or the way numbers are ranked (ignoring signs). we did this by writing separate callback functions for each use case and just passing those to our `bubbleSort()` function. 
 
 

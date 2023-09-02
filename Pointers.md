@@ -572,6 +572,15 @@ int main() {
 }
 ```
 
+## how NOT to dereference
+
+```c++ 
+// will result in a compiler error
+*(functionPointer)(arguments); 
+
+// correct way 
+(*functionPointer)(arguments); 
+```
 # function pointers and callbacks 
 
 

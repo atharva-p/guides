@@ -347,7 +347,7 @@ By having the ability to execute a module as a script, Python modules can be ver
 
 ```python 
 class Dog:
-	# species is a class attribute, all dogs will have belong to this species
+	# species is a class attribute, all dogs will belong to this species
 	species = "Canis familiaris"      
 
 	def __init__(self, name, age): 

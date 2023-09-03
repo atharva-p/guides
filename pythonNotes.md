@@ -437,6 +437,10 @@ Class attributes - Attributes that may be shared across objects are called class
 
 Instance attributes - Attributes that will be unique to each object of the class are instance attributes. These are declared inside the `__init__()` function and use the `self` tag
 
+## Creating enums from classes 
+
+if a class only uses class attributes, it can be accessed without creating it's object. Such classes can be used to create enums in python. Enums in programming allow you to define a set of named values.
+
 # List comprehensions 
 
 Used for creating a new list using items from an already existing list. A sequence of operators (+) and operands (a  and b) is called an expression

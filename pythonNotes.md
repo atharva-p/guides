@@ -185,6 +185,10 @@ for index, item in enumerate(testList):
 
 An enumerated object converted into a list can be used as a normal 2D list. It creates a matrix\[x]\[y] with x representing the counter column assigned by enumerate and y the column with the actual iterable values.
 
+### Unpacking lists in python 
+
+https://www.pythontutorial.net/python-basics/python-unpack-list/
+
 ## [Terminating a program](https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/)
 
 Use the `sys.exit()` function from the `sys` module to exit a program.

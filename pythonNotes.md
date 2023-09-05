@@ -1,8 +1,7 @@
-# Essential important python notes
 
 There is no block scope in python. Only functions have local scopes. if-else, loops don't create local scopes. 
 
-## Script vs module vs package vs library
+# Script vs module vs package vs library
 
 Script - A **script** is a Python file that’s intended to be run directly. When you run it, it should do _something_. This means that scripts will often contain code written outside the scope of any classes or functions
 
@@ -12,13 +11,13 @@ Library - A **library** is a set of modules which makes sense to be together a
 
 Package - A **package** is a unit of distribution that can contain a library or an executable or both. It's a way to share your code with the community.
 
-## Taking input
+# Taking input
 
 ```python
 print("hello there " + input("enter your name")) # will wait for input and print hey there input
 ```
 
-### Taking multiple numbers as input
+## Taking multiple numbers as input
 
 If numbers are to be inputted into a list (eg "1 3 3 5 6") use the following method
 
@@ -27,11 +26,11 @@ If numbers are to be inputted into a list (eg "1 3 3 5 6") use the following met
 numbers = list(map(int, inputString.split()))
 ```
 
-## Mathematical operations
+# Mathematical operations
 
 Use `**` to denote a number as an exponent. For example, `print(2**3)` would print 2^3 that is 8
 
-### Rounding numbers
+## Rounding numbers
 
 ```python
 print(round(8 / 3))   # answer 3
@@ -47,7 +46,7 @@ The additional 2 will round 8 / 3 to two places after the decimal
 **Rounding a number up**
 Use the `math.ceil()` function to round a number to an integer higher or equal to x. To **ceil** is to return an integer that is equal or higher than x.
 
-## Lower() and count()
+# Lower() and count()
 
 `lower()` function will make a string lowercase. The `count()` function will return the count of the string or substring passed to it from a list.
 
@@ -59,7 +58,7 @@ count = name.count("a") # will return 3
 
 `lower()` is part of [python string methods](https://www.w3schools.com/python/python_ref_string.asp) and `count()` is a part of python list methods
 
-## [Randomization](https://www.w3schools.com/python/module_random.asp)
+# [Randomization](https://www.w3schools.com/python/module_random.asp)
 
 `randint(a, b)` - generates a random number between a and b (both inclusive)
 
@@ -71,7 +70,7 @@ count = name.count("a") # will return 3
 
 `shuffle(iterable)` - will shuffle the original iterable passed to it. This method changes the original list, it does not return a new list.
 
-## [Lists](https://www.w3schools.com/python/python_ref_list.asp)
+# [Lists](https://www.w3schools.com/python/python_ref_list.asp)
 
 Negative indices can also be used to access list data. A negative index will start counting from the end of the list.
 
@@ -108,7 +107,7 @@ print(testList)
 # output ['google', 'amazon', 'apple', ['microsoft', 'tesla'], 'microsoft', 'tesla', 'S', 'p', 'a', 'c', 'e', 'X']
 ```
 
-### [Converting strings to lists](https://www.askpython.com/python/string/convert-string-to-list-in-python)
+## [Converting strings to lists](https://www.askpython.com/python/string/convert-string-to-list-in-python)
 
 1. String to a list of strings - Use the `split()` or `rsplit()` functions. These functions will split a string at the specified separator and returns a **list of substrings**.
 
@@ -137,7 +136,7 @@ print(charList)
 
 This will output `[['a', 't', 'h', 'a', 'r', 'v', 'a'], ['a', 's', 'h', 'i', 's', 'h'], ['p', 'a', 't', 'i', 'l']]`
 
-### Strings are immutable
+## Strings are immutable
 
 If it is not possible to alter the value of an object over time, it is known as immutable. Strings are immutable so the following code will work in C but not in python
 
@@ -161,11 +160,11 @@ nameAsAList = list(atharva)
 newString = "".join(nameAsAList)
 ```
 
-### Enumerate function
+## Enumerate function
 
 the `enumerate(iterable, optional-starting-number)` function adds counter to an iterable and returns it as an enumerate object which can then be converted into a list or tuple.
 
-#### Enumerate function in for loops
+### Enumerate function in for loops
 
 ```python
 testList = ["apple", "microsoft", "google", "lenovo", "bing", "tesla"]
@@ -181,36 +180,36 @@ for index, item in enumerate(testList):
 5 tesla
 ```
 
-#### Converting enumerate object into a list
+### Converting enumerate object into a list
 
 An enumerated object converted into a list can be used as a normal 2D list. It creates a matrix\[x]\[y] with x representing the counter column assigned by enumerate and y the column with the actual iterable values.
 
-### Unpacking lists in python 
+## Unpacking lists in python 
 
 https://www.pythontutorial.net/python-basics/python-unpack-list/
 
-## [Terminating a program](https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/)
+# [Terminating a program](https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/)
 
 Use the `sys.exit()` function from the `sys` module to exit a program.
 
 It takes an optional argument, either an integer or a string. 0 integer indicates successful program termination.
 
-### Membership operators
+# Membership operators
 
 Used to test whether an item is present in an object.
 
 `in` - will return true if the item is found in object.
 `not in` - will return true if the item is not found in object
 
-## Loops
+# Loops
 
-### For loop with a range function
+## For loop with a range function
 
 Loop will work between the range defined by the range function. `range(a, b)` will be between a and b, including a but **not including b** [a, b)
 
 By default the next iteration using a range function will increase by 1. If you want any other number, you can pass an extra parameter to the function `for i in range(0, 11, 2)` will print 0 2 4 6 8 10
 
-## [String concatenation](https://www.digitalocean.com/community/tutorials/python-string-concatenation)
+# [String concatenation](https://www.digitalocean.com/community/tutorials/python-string-concatenation)
 
 1. Using + operator
 2. using `join()` method
@@ -221,11 +220,9 @@ By default the next iteration using a range function will increase by 1. If you 
 4. using `format()`
 5. Using [f strings](#f-strings)
 
-_TODO add about from file import something_
+# Functions
 
-## Functions
-
-### Scope and the `global` keyword 
+## Scope and the `global` keyword 
 
 In order to modify variables of the global scope through a local function, a variable needs to be explicitly defined as global inside the local function's scope. Modifying into the global scope often is considered a bad practice. 
 
@@ -238,23 +235,23 @@ def local_function():
 	variable_global += 1      # will change the value of global variable_global to 2 when this function is called 
 ```
 
-### Parameters vs Arguments
+## Parameters vs Arguments
 
 **Parameters** - `def greet(name):` in this the name variable is the parameter. The variables that are defined when the function is declared are known as a parameter.
 
 **Arguments** - `greet("atharva")` in this the string "atharva" passed to the function is known as the argument. The values that are declared within a function when the function is called are known as an argument.
 
-### Keyword Arguments
+## Keyword Arguments
 
 You can add arguments with their respective parameters during a function call. For example, if we have a function `def testfun(a, b, c)` we can pass arguments to specific parameters `testfun(b = 10, a = 1, c = 30)`
 
-### Returning Unicode value of a unicode character and vice versa
+## Returning Unicode value of a unicode character and vice versa
 
 Use the `ord()` function to convert character to unicode
 
 Use the `chr()` function to convert unicode to character
 
-### Lambda functions
+## Lambda functions
 
 TODO add syntax
 
@@ -277,7 +274,7 @@ print(triple(5)) # Output: 15
 
 Here, we define a function `multiply_by` that takes an argument `factor` and returns a lambda function that multiplies its input by `factor`. We then use this function to create two new functions `double` and `triple` that multiply their input by 2 and 3 respectively.
 
-## Dictionaries
+# Dictionaries
 
 ```python
 test_dict = {
@@ -290,7 +287,7 @@ Used to store key value pairs. Passing a key to the dictionary will return the v
 
 Dictionary keys can also have function names as their values
 
-### Operations on a dictionary
+## Operations on a dictionary
 
 ```python
 # Adding or modifying a key's value in a dictionary
@@ -300,7 +297,7 @@ for key in dictionary_name:
    print(dictionary_name[key])
 ```
 
-### Nesting lists and dictionaries inside a dictionary
+## Nesting lists and dictionaries inside a dictionary
 
 Both lists and dictionaries can be listed. Following code nests dictionaries with the country name inside the root dictionary `travel_log` to describe attributes of countries (like cities_visited, food_eaten, etc). Lists are also nested inside the country dictionaries to denote multiple items associated with that attribute.
 
@@ -318,7 +315,7 @@ travel_log = {
 
 You could also nest multiple dictonaries inside a list and access them according to the list index numbers
 
-## Docstrings
+# Docstrings
 
 Give your functions a description that IDEs and other programming tools can also read and show during function call
 

@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dataStructuesAlgorithms.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3a463142c981fde4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Data structures c++.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,29 +146,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a463142c981fde4",
+  "active": "7c2d1fa6bda8a892",
   "lastOpenFiles": [
     "dataStructuesAlgorithms.md",
     "Data structures c++.md",
+    "pythonNotes.md",
     "gitref.md",
     "assets/passByValueArray.png",
-    "Pointers.md",
     "assets/passByValue.png",
+    "assets",
+    "machine learning.md",
+    "Pointers.md",
+    "sql.md",
+    "Scribble.md",
     "README.md",
     "Basics.md",
     "assets/Pasted image 20230826202125.png",
     "assets/Pasted image 20230826185416.png",
-    "sql.md",
     "assets/Pasted image 20230815183753.png",
     "assets/Pasted image 20230815183727.png",
     "assets/Pasted image 20230815182112.png",
-    "assets",
     "Pasted image 20230805121538.png",
     "Pasted image 20230805121009.png",
     "Pasted image 20230805120128.png",
     "Course outline & revision.md",
-    "Scribble.md",
-    "pythonNotes.md",
     "Machine learning.md",
     "IOT architecture and protocol.md",
     "Computer Networks.md",

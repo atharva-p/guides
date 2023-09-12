@@ -17,5 +17,7 @@ void bubbleSort(int* array, int size){
 
 # abstract data types 
 
-these define data and the operations on data, but provide no implementation details. for example, list is an abstract data type. (lists are implemented as arrays in many programming languages)
+these define data and the operations on data, but provide no implementation details. for example, list is an abstract data type. (lists are implemented as arrays in many programming languages. A linked list is also an implementation of a list)
+
+
 

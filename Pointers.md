@@ -197,7 +197,7 @@ char testString[] = "hello"; // the type should've been const char
 testString[1] = 'o'; // this is even allowed
 ```
 
-but this does not work with pointers 
+but the compiler is type strict in other cases, and this does not work with pointers 
 
 ```c++ 
 void customPrint(const char* charPointer) { // without const char* this wil not work. 

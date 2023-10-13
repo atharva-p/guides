@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "7a39413c630a6be1",
+    "id": "ff0eac76f949a1c7",
     "type": "split",
     "children": [
       {
-        "id": "7caf892fba15b79e",
+        "id": "24a5cb5c278f8f9b",
         "type": "tabs",
         "children": [
           {
-            "id": "7c2d1fa6bda8a892",
+            "id": "18c04394045cdbf1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data structures c++.md",
+                "file": "gitref.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "091f5b6515a9e845",
+    "id": "6b5c9d5c1cc0e053",
     "type": "split",
     "children": [
       {
-        "id": "784589c156840ca5",
+        "id": "70e9342aeb469f33",
         "type": "tabs",
         "children": [
           {
-            "id": "a3f9132ce06a886a",
+            "id": "b6cf406b32270ca5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "70a8e2a356787e66",
+            "id": "bb5e995d0cac8a22",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "8fb34921b7465a7e",
+            "id": "ce4d71281f210735",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,47 +69,47 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 202.50152587890625
   },
   "right": {
-    "id": "ceb53314ba2df84e",
+    "id": "6c718465da22cc16",
     "type": "split",
     "children": [
       {
-        "id": "bee1588c1bd8713f",
+        "id": "d4279562fcda4df2",
         "type": "tabs",
         "children": [
           {
-            "id": "cc139282992ec468",
+            "id": "e08c03ab40e79177",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data structures c++.md",
+                "file": "gitref.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "750364741d4cddac",
+            "id": "f8df0514bebeae6a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data structures c++.md",
+                "file": "gitref.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "46934bc8373b16b7",
+            "id": "012b6e471e1a5608",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,12 +120,12 @@
             }
           },
           {
-            "id": "1c608172da090467",
+            "id": "f2b428c218b56ae4",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data structures c++.md"
+                "file": "gitref.md"
               }
             }
           }
@@ -134,7 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5
+    "width": 229.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,36 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7c2d1fa6bda8a892",
+  "active": "b6cf406b32270ca5",
   "lastOpenFiles": [
-    "backup.md",
-    "Data structures c++.md",
     "dataStructuesAlgorithms.md",
-    "pythonNotes.md",
+    "Data structures c++.md",
+    "Basics.md",
     "gitref.md",
     "assets/passByValueArray.png",
     "assets/passByValue.png",
-    "assets",
-    "machine learning.md",
-    "Pointers.md",
-    "sql.md",
-    "Scribble.md",
     "README.md",
-    "Basics.md",
-    "assets/Pasted image 20230826202125.png",
-    "assets/Pasted image 20230826185416.png",
-    "assets/Pasted image 20230815183753.png",
-    "assets/Pasted image 20230815183727.png",
-    "assets/Pasted image 20230815182112.png",
-    "Pasted image 20230805121538.png",
-    "Pasted image 20230805121009.png",
-    "Pasted image 20230805120128.png",
-    "Course outline & revision.md",
-    "Machine learning.md",
-    "IOT architecture and protocol.md",
-    "Computer Networks.md",
-    "conflict-files-obsidian-git.md",
-    "Untitled.canvas",
-    "pygame.md"
+    "Pointers.md",
+    "Course outline & revision.md"
   ]
 }

@@ -60,3 +60,15 @@
 set default terminal to cmd first
 # basic input and output 
 
+```c++
+// getting a whole line as input 
+#include <iostream> 
+#include <string> 
+int main(){
+	std::string testInput; 
+	std::getline(std::cin, testInput); 
+	std::cout << testInput << std::endl; 
+}
+```
+
+

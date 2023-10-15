@@ -71,4 +71,14 @@ int main(){
 }
 ```
 
+# Time complexity 
+
+## 3 rules for time complexity 
+
+1. time complexity should be expressed in terms of the worst case scenario. 
+2. avoid constants 
+3. avoid lower values
+
+Time complexity is the rate with which the time taken to execute a code snippet increases. we use big O notation to express time complexity. it is the measure of amount of time taken for an algorithm to run as a function of it's input size. 
+
 

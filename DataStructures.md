@@ -95,6 +95,14 @@ space complexity describes the amount of memory used by a snippet of code. denot
 
 space complexity = auxiliary space (space used to solve the problem) + input space (space used to store the input)
 
+# pattern problems 
+
+## Rules for solving pattern problems 
+
+1. for the outer loop. count the number of rows 
+2. for the inner loop, count the number of columns and somehow relate these to the rows 
+3. print the desired character in the inner loop 
+4. observe symmetry (optional) 
 
 
 

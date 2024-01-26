@@ -222,7 +222,7 @@ int main() {
 int testArr[2] = {1, 2}; 
 int* pointer = testArr; // allowed
 
-int* pointer = &testArr; // not allowed, a type of int (*[2])pointer is expected
+int* pointer = &testArr; // not allowed, a type of int (*[2])pointer is given
 
 int (*pointer)[2] = &testArr; // allowed
 ```

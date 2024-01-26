@@ -233,6 +233,8 @@ however, assigning `&testArr` to the `int*` pointer will result in a type mismat
 
 ## using pointers with multidimensional arrays 
 
+you should not be reliant on `typeid.name()` since the output is not guaranteed to be consistent across multiple runs of the program. 
+
 ```c++
 #include <iostream> 
 

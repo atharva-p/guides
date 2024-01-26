@@ -587,7 +587,7 @@ int main() {
 
 A callback function is a function that is passed to another function as a argument and can be called by the caller function. 
 
-with callback functions, you can have a modular function (a caller function) and you can change the behavior of some part of that function (a module or a callback) by changing the callback function passed to that caller function. 
+with callback functions, you can have a modular function (a caller function) and you can change the behavior of some part of that caller function (the part being, a module or a callback) by changing the callback function passed to that caller function. 
 
 following is an example of callback functions being used to specify the ranking mechanism of bubble sort 
 
